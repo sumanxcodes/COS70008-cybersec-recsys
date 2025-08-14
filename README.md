@@ -64,8 +64,6 @@ python scripts/build_dtm.py --input data/raw/exercises.csv --out data/processed/
 5. **Launch the dashboard**
 
 ```bash
-uvicorn src.dashboard.app:app --reload
-# OR
 streamlit run src/dashboard/app.py
 ```
 
