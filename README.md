@@ -49,6 +49,7 @@ conda activate cybersec-recsys
 3. **Run Jupyter Notebooks** (for EDA/prototyping)
 
 ```bash
+python -m ipykernel install --user --name cybersec-recsys --display-name "Python (cybersec-recsys)"
 jupyter lab
 ```
 
