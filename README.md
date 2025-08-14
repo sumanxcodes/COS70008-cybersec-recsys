@@ -35,7 +35,7 @@ COS70008-cybersec-recsys/
 1. **Clone the repo**
 
 ```bash
-git clone https://github.com/<org-or-user>/COS70008-cybersec-recsys.git
+git clone https://github.com/sumanxcodes/COS70008-cybersec-recsys.git
 cd COS70008-cybersec-recsys
 ```
 
