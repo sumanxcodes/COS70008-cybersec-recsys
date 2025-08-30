@@ -1,0 +1,781 @@
+Name, Id
+Extra Window Memory Injection , T1055.011
+Scheduled Task , T1053.005
+Socket Filters , T1205.002
+Indicator Removal from Tools , T1066
+Archive via Utility , T1560.001
+VNC , T1021.005
+Windows Management Instrumentation , T1047
+Malicious Shell Modification , T1156
+Screen Capture , T1113
+Fileless Storage , T1027.011
+Bootkit , T1067
+Boot or Logon Initialization Scripts , T1037
+Adversary-in-the-Middle , T1557
+System Owner/User Discovery , T1033
+Acquire Infrastructure , T1583
+Rundll32 , T1218.011
+Container and Resource Discovery , T1613
+Serverless , T1583.007
+Hidden Window , T1143
+LC_LOAD_DYLIB Addition , T1161
+Standard Encoding , T1132.001
+Embedded Payloads , T1027.009
+Plist Modification , T1150
+Pluggable Authentication Modules , T1556.003
+Revert Cloud Instance , T1578.004
+HISTCONTROL , T1148
+Gather Victim Host Information , T1592
+Digital Certificates , T1596.003
+Keylogging , T1056.001
+File/Path Exclusions , T1564.012
+Linux and Mac File and Directory Permissions Modification , T1222.002
+Password Guessing , T1110.001
+PubPrn , T1216.001
+Purchase Technical Data , T1597.002
+OS Credential Dumping , T1003
+Shared Modules , T1129
+Data from Configuration Repository , T1602
+Disk Structure Wipe , T1561.002
+Direct Network Flood , T1498.001
+Stored Data Manipulation , T1492
+Path Interception by PATH Environment Variable , T1574.007
+Sharepoint , T1213.002
+Direct Volume Access , T1006
+File System Permissions Weakness , T1044
+Artificial Intelligence , T1588.007
+Email Hiding Rules , T1564.008
+External Defacement , T1491.002
+Encrypted/Encoded File , T1027.013
+LLMNR/NBT-NS Poisoning and Relay , T1171
+IP Addresses , T1590.005
+OS Exhaustion Flood , T1499.001
+Rootkit , T1014
+PowerShell Profile , T1546.013
+JavaScript , T1059.007
+DNS , T1590.002
+Systemd Service , T1501
+Elevated Execution with Prompt , T1514
+Audio Capture , T1123
+Create or Modify System Process , T1543
+External Remote Services , T1133
+Component Firmware , T1109
+LC_LOAD_DYLIB Addition , T1546.006
+Steal Web Session Cookie , T1539
+Container Orchestration Job , T1053.007
+Domain Generation Algorithms , T1568.002
+Double File Extension , T1036.007
+Bypass User Account Control , T1548.002
+Timestomp , T1099
+Internet Connection Discovery , T1016.001
+Sudo and Sudo Caching , T1548.003
+Archive via Custom Method , T1560.003
+Modify Cloud Compute Infrastructure , T1578
+Network Devices , T1584.008
+Malvertising , T1583.008
+Permission Groups Discovery , T1069
+Email Collection , T1114
+Security Account Manager , T1003.002
+WHOIS , T1596.002
+System Firmware , T1542.001
+Search Victim-Owned Websites , T1594
+Cloud Groups , T1069.003
+Services Registry Permissions Weakness , T1574.011
+DNS/Passive DNS , T1596.001
+Application Exhaustion Flood , T1499.003
+Rc.common , T1163
+Compromise Software Dependencies and Development Tools , T1195.001
+Digital Certificates , T1588.004
+DNS Server , T1583.002
+Disk Wipe , T1561
+DNS , T1071.004
+Cloud Instance Metadata API , T1552.005
+Securityd Memory , T1555.002
+Group Policy Discovery , T1615
+Bootkit , T1542.003
+Data from Removable Media , T1025
+Code Signing , T1116
+Mavinject , T1218.013
+Cloud Instance Metadata API , T1522
+Process Hollowing , T1093
+Local Data Staging , T1074.001
+Match Legitimate Name or Location , T1036.005
+Domain Fronting , T1172
+Digital Certificates , T1587.003
+Stored Data Manipulation , T1565.001
+Password Cracking , T1110.002
+SID-History Injection , T1178
+Local Email Collection , T1114.001
+Keychain , T1555.001
+Boot or Logon Autostart Execution , T1547
+LSA Secrets , T1003.004
+Port Monitors , T1013
+Weaken Encryption , T1600
+SAML Tokens , T1606.002
+Spearphishing Link , T1192
+Masquerade File Type , T1036.008
+Service Stop , T1489
+Malware , T1587.001
+Regsvcs/Regasm , T1121
+Device Driver Discovery , T1652
+Sudo Caching , T1206
+Domain Account , T1087.002
+Active Setup , T1547.014
+Hide Artifacts , T1564
+Dynamic Data Exchange , T1559.002
+Malicious File , T1204.002
+Identify Business Tempo , T1591.003
+Security Software Discovery , T1063
+Hardware , T1592.001
+Taint Shared Content , T1080
+Trust Modification , T1484.002
+Symmetric Cryptography , T1573.001
+Local Account , T1087.001
+Securityd Memory , T1167
+Social Media Accounts , T1586.001
+Application Access Token , T1527
+Safe Mode Boot , T1562.009
+Screensaver , T1180
+TFTP Boot , T1542.005
+Windows Service , T1543.003
+Fast Flux DNS , T1568.001
+System Checks , T1497.001
+Cron , T1053.003
+Domain Groups , T1069.002
+Vulnerabilities , T1588.006
+Spearphishing Link , T1566.002
+Startup Items , T1165
+Clear Linux or Mac System Logs , T1070.002
+Application or System Exploitation , T1499.004
+Office Application Startup , T1137
+InstallUtil , T1218.004
+Spearphishing Link , T1598.003
+SSH , T1021.004
+Additional Cloud Roles , T1098.003
+Print Processors , T1547.012
+Disabling Security Tools , T1089
+Disk Structure Wipe , T1487
+Spearphishing Attachment , T1566.001
+Credentials in Registry , T1214
+Stripped Payloads , T1027.008
+Component Object Model , T1559.001
+DLL Search Order Hijacking , T1574.001
+Automated Collection , T1119
+Clipboard Data , T1115
+Proc Filesystem , T1003.007
+Botnet , T1583.005
+Password Managers , T1555.005
+AppInit DLLs , T1103
+Gatekeeper Bypass , T1553.001
+Drive-by Target , T1608.004
+System Service Discovery , T1007
+Network Sniffing , T1040
+Application Deployment Software , T1017
+Code Signing , T1553.002
+Data from Cloud Storage , T1530
+Runtime Data Manipulation , T1565.003
+Credentials in Registry , T1552.002
+Network Share Discovery , T1135
+Peripheral Device Discovery , T1120
+Break Process Trees , T1036.009
+Network Topology , T1590.004
+Code Signing Certificates , T1587.002
+Windows File and Directory Permissions Modification , T1222.001
+Add-ins , T1137.006
+Transport Agent , T1505.002
+System Information Discovery , T1082
+Application Layer Protocol , T1071
+AppDomainManager , T1574.014
+Remote Data Staging , T1074.002
+Additional Container Cluster Roles , T1098.006
+Scheduled Task/Job , T1053
+Msiexec , T1218.007
+Login Item , T1162
+Network Trust Dependencies , T1590.003
+Reflection Amplification , T1498.002
+Password Filter DLL , T1556.002
+Terminal Services DLL , T1505.005
+AppleScript , T1059.002
+Browser Extensions , T1176
+Service Exhaustion Flood , T1499.002
+Compromise Hardware Supply Chain , T1195.003
+Native API , T1106
+Clear Network Connection History and Configurations , T1070.007
+AS-REP Roasting , T1558.004
+Service Registry Permissions Weakness , T1058
+Virtual Private Server , T1584.003
+AutoHotKey & AutoIT , T1059.010
+Reduce Key Space , T1600.001
+Clear Command History , T1070.003
+Indirect Command Execution , T1202
+Custom Cryptographic Protocol , T1024
+Revert Cloud Instance , T1536
+Replication Through Removable Media , T1091
+Data from Local System , T1005
+Deobfuscate/Decode Files or Information , T1140
+Outlook Rules , T1137.005
+Impair Defenses , T1562
+Cloud Accounts , T1586.003
+Email Accounts , T1586.002
+Upload Malware , T1608.001
+Supply Chain Compromise , T1195
+Exploit Public-Facing Application , T1190
+Steal or Forge Kerberos Tickets , T1558
+Credentials from Password Stores , T1555
+Exfiltration Over Web Service , T1567
+Remote Access Software , T1219
+Domains , T1583.001
+Archive via Library , T1560.002
+Thread Execution Hijacking , T1055.003
+Multilayer Encryption , T1079
+Masquerading , T1036
+Application Shimming , T1546.011
+Unsecured Credentials , T1552
+Port Monitors , T1547.010
+Clear Mailbox Data , T1070.008
+Login Hook , T1037.002
+Content Injection , T1659
+Process Injection , T1055
+Exfiltration Over Webhook , T1567.004
+Bash History , T1139
+Traffic Signaling , T1205
+Direct Cloud VM Connections , T1021.008
+Credentials from Web Browsers , T1503
+System Binary Proxy Execution , T1218
+Source , T1153
+DLL Search Order Hijacking , T1038
+New Service , T1050
+Timestomp , T1070.006
+Reflective Code Loading , T1620
+Wi-Fi Discovery , T1016.002
+Ignore Process Interrupts , T1564.011
+Escape to Host , T1611
+Shortcut Modification , T1547.009
+Application Window Discovery , T1010
+Standard Cryptographic Protocol , T1032
+Email Account , T1087.003
+Hypervisor , T1062
+Time Based Evasion , T1497.003
+AppCert DLLs , T1182
+CMSTP , T1218.003
+SSH Hijacking , T1563.001
+Disable Windows Event Logging , T1562.002
+Scheduled Transfer , T1029
+SMB/Windows Admin Shares , T1021.002
+Implant Internal Image , T1525
+Protocol Tunneling , T1572
+Control Panel , T1218.002
+Network Address Translation Traversal , T1599.001
+Upload Tool , T1608.002
+Security Support Provider , T1547.005
+Winlogon Helper DLL , T1004
+Binary Padding , T1009
+Use Alternate Authentication Material , T1550
+Remote Desktop Protocol , T1076
+Threat Intel Vendors , T1597.001
+Exfiltration Over Other Network Medium , T1011
+Network Device Configuration Dump , T1602.002
+Gather Victim Identity Information , T1589
+Authentication Package , T1131
+Extra Window Memory Injection , T1181
+Disable or Modify System Firewall , T1562.004
+Archive Collected Data , T1560
+Launchctl , T1152
+SIP and Trust Provider Hijacking , T1553.003
+Domain Generation Algorithms , T1483
+Browser Session Hijacking , T1185
+Remote Services , T1021
+Mail Protocols , T1071.003
+Hybrid Identity , T1556.007
+Vulnerability Scanning , T1595.002
+Cloud API , T1059.009
+Search Open Technical Databases , T1596
+Electron Applications , T1218.015
+Disable or Modify Linux Audit System , T1562.012
+Rogue Domain Controller , T1207
+Code Signing Policy Modification , T1553.006
+Deploy Container , T1610
+File Deletion , T1107
+Private Keys , T1145
+Modify Registry , T1112
+Launch Daemon , T1543.004
+Cloud Infrastructure Discovery , T1580
+Credentials from Web Browsers , T1555.003
+Path Interception by Search Order Hijacking , T1574.008
+Defacement , T1491
+Unused/Unsupported Cloud Regions , T1535
+DHCP Spoofing , T1557.003
+AppleScript , T1155
+Remote Service Session Hijacking , T1563
+Binary Padding , T1027.001
+Web Shell , T1505.003
+Group Policy Modification , T1484.001
+Browser Information Discovery , T1217
+Private Keys , T1552.004
+Server , T1583.004
+Windows Remote Management , T1021.006
+Exfiltration Over Bluetooth , T1011.001
+Default Accounts , T1078.001
+Time Providers , T1547.003
+Image File Execution Options Injection , T1183
+Rundll32 , T1085
+Modify Existing Service , T1031
+Trap , T1546.005
+Dynamic Linker Hijacking , T1574.006
+Local Account , T1136.001
+Communication Through Removable Media , T1092
+Clear Windows Event Logs , T1070.001
+Email Accounts , T1585.002
+LLMNR/NBT-NS Poisoning and SMB Relay , T1557.001
+File and Directory Permissions Modification , T1222
+LSASS Memory , T1003.001
+At (Linux) , T1053.001
+Hooking , T1179
+Active Scanning , T1595
+Plist Modification , T1547.011
+Abuse Elevation Control Mechanism , T1548
+Create Process with Token , T1134.002
+Setuid and Setgid , T1548.001
+Winlogon Helper DLL , T1547.004
+System Firmware , T1019
+Distributed Component Object Model , T1021.003
+Change Default File Association , T1042
+Regsvr32 , T1117
+Password Spraying , T1110.003
+External Proxy , T1090.002
+Web Portal Capture , T1056.003
+Email Addresses , T1589.002
+Re-opened Applications , T1164
+Indicator Blocking , T1054
+Spearphishing Voice , T1598.004
+Redundant Access , T1108
+Spearphishing Attachment , T1193
+Cached Domain Credentials , T1003.005
+SSH Authorized Keys , T1098.004
+Kernel Modules and Extensions , T1215
+Security Support Provider , T1101
+Network Security Appliances , T1590.006
+Image File Execution Options Injection , T1546.012
+Odbcconf , T1218.008
+Search Engines , T1593.002
+LSASS Driver , T1177
+Business Relationships , T1591.002
+Temporary Elevated Cloud Access , T1548.005
+Video Capture , T1125
+Gatekeeper Bypass , T1144
+Software Packing , T1045
+Process Doppelgänging , T1055.013
+System Network Configuration Discovery , T1016
+Delete Cloud Instance , T1578.003
+Code Repositories , T1593.003
+Executable Installer File Permissions Weakness , T1574.005
+Accessibility Features , T1546.008
+PowerShell Profile , T1504
+SIP and Trust Provider Hijacking , T1198
+Account Discovery , T1087
+Proxy , T1090
+Command and Scripting Interpreter , T1059
+Indicator Blocking , T1562.006
+Domain Account , T1136.002
+Employee Names , T1589.003
+Domain Trust Discovery , T1482
+Golden Ticket , T1558.001
+Component Object Model and Distributed COM , T1175
+Automated Exfiltration , T1020
+Client Configurations , T1592.004
+Disable or Modify Cloud Firewall , T1562.007
+Right-to-Left Override , T1036.002
+Malware , T1588.001
+Component Firmware , T1542.002
+Indicator Removal , T1070
+Exfiltration Over Symmetric Encrypted Non-C2 Protocol , T1048.001
+Office Template Macros , T1137.001
+Virtual Private Server , T1583.003
+Confluence , T1213.001
+Pass the Ticket , T1550.003
+Container Administration Command , T1609
+File and Directory Discovery , T1083
+Dynamic Resolution , T1568
+Masquerade Task or Service , T1036.004
+Asynchronous Procedure Call , T1055.004
+Traffic Duplication , T1020.001
+Application Shimming , T1138
+Plist File Modification , T1647
+AppCert DLLs , T1546.009
+CMSTP , T1191
+Multi-hop Proxy , T1188
+Email Forwarding Rule , T1114.003
+Data Staged , T1074
+Steal or Forge Authentication Certificates , T1649
+Device Registration , T1098.005
+System Network Connections Discovery , T1049
+Compromise Infrastructure , T1584
+Mark-of-the-Web Bypass , T1553.005
+Disable Crypto Hardware , T1600.002
+Pre-OS Boot , T1542
+Scripting , T1064
+Build Image on Host , T1612
+Shared Webroot , T1051
+Portable Executable Injection , T1055.002
+Verclsid , T1218.012
+Compromise Accounts , T1586
+Launchctl , T1569.001
+Botnet , T1584.005
+Network Device CLI , T1059.008
+Bash History , T1552.003
+Downgrade Attack , T1562.010
+XPC Services , T1559.003
+Virtualization/Sandbox Evasion , T1497
+Web Service , T1102
+Credentials In Files , T1552.001
+DNS Calculation , T1568.003
+Mshta , T1218.005
+Login Items , T1547.015
+Stage Capabilities , T1608
+Link Target , T1608.005
+Multi-Stage Channels , T1104
+Financial Theft , T1657
+Execution Guardrails , T1480
+Cloud Storage Object Discovery , T1619
+Web Cookies , T1606.001
+Log Enumeration , T1654
+Token Impersonation/Theft , T1134.001
+Exfiltration to Code Repository , T1567.001
+Cloud Services , T1021.007
+Port Knocking , T1205.001
+LNK Icon Smuggling , T1027.012
+Web Services , T1583.006
+Steal Application Access Token , T1528
+Spearphishing Attachment , T1598.002
+Additional Cloud Credentials , T1098.001
+User Execution , T1204
+Internal Defacement , T1491.001
+Hidden Users , T1564.002
+Make and Impersonate Token , T1134.003
+Group Policy Preferences , T1552.006
+Control Panel Items , T1196
+Exfiltration Over Asymmetric Encrypted Non-C2 Protocol , T1048.002
+Cloud Account , T1087.004
+Process Discovery , T1057
+Impair Command History Logging , T1562.003
+Launchd , T1053.004
+Network Provider DLL , T1556.008
+Windows Management Instrumentation Event Subscription , T1546.003
+CDNs , T1596.004
+User Activity Based Checks , T1497.002
+Input Prompt , T1141
+Cloud Accounts , T1585.003
+Software Deployment Tools , T1072
+Exfiltration Over C2 Channel , T1041
+Parent PID Spoofing , T1134.004
+Gather Victim Org Information , T1591
+Registry Run Keys / Startup Folder , T1060
+Forge Web Credentials , T1606
+Multi-Factor Authentication Request Generation , T1621
+Compromise Host Software Binary , T1554
+Chat Messages , T1552.008
+PowerShell , T1059.001
+Shortcut Modification , T1023
+Change Default File Association , T1546.001
+VDSO Hijacking , T1055.014
+Multiband Communication , T1026
+File Transfer Protocols , T1071.002
+Component Object Model Hijacking , T1122
+Accessibility Features , T1015
+Exploitation for Credential Access , T1212
+Emond , T1546.014
+One-Way Communication , T1102.003
+Gather Victim Network Information , T1590
+Exploitation of Remote Services , T1210
+Parent PID Spoofing , T1502
+Keychain , T1142
+Internal Spearphishing , T1534
+Sudo , T1169
+Services File Permissions Weakness , T1574.010
+Registry Run Keys / Startup Folder , T1547.001
+Trusted Relationship , T1199
+Cloud Account , T1136.003
+Local Groups , T1069.001
+LC_MAIN Hijacking , T1149
+Search Open Websites/Domains , T1593
+Account Manipulation , T1098
+Mshta , T1170
+Exfiltration Over Alternative Protocol , T1048
+Kernel Modules and Extensions , T1547.006
+GUI Input Capture , T1056.002
+Pass the Ticket , T1097
+Tool , T1588.002
+Exfiltration over USB , T1052.001
+KernelCallbackTable , T1574.013
+Search Closed Sources , T1597
+Systemd Timers , T1053.006
+Phishing , T1566
+Graphical User Interface , T1061
+ROMMONkit , T1542.004
+Compiled HTML File , T1218.001
+Network Share Connection Removal , T1070.005
+Multi-hop Proxy , T1090.003
+Brute Force , T1110
+Unix Shell , T1059.004
+Outlook Forms , T1137.003
+Dylib Hijacking , T1157
+Disable or Modify Tools , T1562.001
+Data Manipulation , T1565
+Inter-Process Communication , T1559
+Data Obfuscation , T1001
+Data from Network Shared Drive , T1039
+Web Services , T1584.006
+Modify System Image , T1601
+Hijack Execution Flow , T1574
+Indicator Removal from Tools , T1027.005
+Malicious Image , T1204.003
+Container Service , T1543.005
+Valid Accounts , T1078
+Non-Standard Port , T1571
+Social Media Accounts , T1585.001
+DLL Side-Loading , T1073
+Process Hollowing , T1055.012
+Exploitation for Privilege Escalation , T1068
+Resource Forking , T1564.009
+Account Access Removal , T1531
+Credential Stuffing , T1110.004
+Kerberoasting , T1208
+Obfuscated Files or Information , T1027
+Multi-Factor Authentication , T1556.006
+Remote Email Collection , T1114.002
+IIS Components , T1505.004
+Invalid Code Signature , T1036.001
+Run Virtual Instance , T1564.006
+Trap , T1154
+Password Policy Discovery , T1201
+Event Triggered Execution , T1546
+Unix Shell Configuration Modification , T1546.004
+Forced Authentication , T1187
+SID-History Injection , T1134.005
+Network Boundary Bridging , T1599
+Data Encrypted for Impact , T1486
+Disk Content Wipe , T1488
+Subvert Trust Controls , T1553
+Elevated Execution with Prompt , T1548.004
+Firmware , T1592.003
+Encrypted Channel , T1573
+Password Filter DLL , T1174
+Authentication Package , T1547.002
+Regsvr32 , T1218.010
+Data Compressed , T1002
+Exfiltration to Text Storage Sites , T1567.003
+Credentials in Files , T1081
+Software , T1592.002
+Netsh Helper DLL , T1128
+Input Capture , T1056
+Spearphishing Voice , T1566.004
+Exploits , T1587.004
+Social Media , T1593.001
+Component Object Model Hijacking , T1546.015
+Credentials , T1589.001
+Compromise Software Supply Chain , T1195.002
+Rename System Utilities , T1036.003
+Bidirectional Communication , T1102.002
+Exploitation for Client Execution , T1203
+Wordlist Scanning , T1595.003
+Spoof Security Alerting , T1562.011
+Outlook Home Page , T1137.004
+Asymmetric Cryptography , T1573.002
+Exfiltration to Cloud Storage , T1567.002
+Lateral Tool Transfer , T1570
+Path Interception by Unquoted Path , T1574.009
+Install Digital Certificate , T1608.003
+Local Job Scheduling , T1168
+Setuid and Setgid , T1166
+Startup Items , T1037.005
+Web Shell , T1100
+Process Doppelgänging , T1186
+SSH Hijacking , T1184
+System Language Discovery , T1614.001
+Non-Application Layer Protocol , T1095
+Pass the Hash , T1075
+Steganography , T1027.003
+DNS Server , T1584.002
+Protocol Impersonation , T1001.003
+Query Registry , T1012
+Data Transfer Size Limits , T1030
+Windows Remote Management , T1028
+Web Session Cookie , T1550.004
+Domain Accounts , T1078.002
+Regsvcs/Regasm , T1218.009
+Path Interception , T1034
+Web Session Cookie , T1506
+Install Root Certificate , T1553.004
+Network Logon Script , T1037.003
+Endpoint Denial of Service , T1499
+Compile After Delivery , T1027.004
+Uncommonly Used Port , T1065
+System Location Discovery , T1614
+VBA Stomping , T1564.007
+BITS Jobs , T1197
+MSBuild , T1127.001
+Impersonation , T1656
+Modify Cloud Compute Configurations , T1578.005
+Bypass User Account Control , T1088
+Runtime Data Manipulation , T1494
+Domain Fronting , T1090.004
+ARP Cache Poisoning , T1557.002
+Disable or Modify Cloud Logs , T1562.008
+Security Software Discovery , T1518.001
+Hidden Window , T1564.003
+Transmitted Data Manipulation , T1493
+Python , T1059.006
+Identify Roles , T1591.004
+Data Encoding , T1132
+AppInit DLLs , T1546.010
+Phishing for Information , T1598
+Resource Hijacking , T1496
+Establish Accounts , T1585
+Obtain Capabilities , T1588
+Screensaver , T1546.002
+Hidden Users , T1147
+Conditional Access Policies , T1556.009
+Create Cloud Instance , T1578.002
+Compile After Delivery , T1500
+Cloud Secrets Management Stores , T1555.006
+Code Repositories , T1213.003
+Transmitted Data Manipulation , T1565.002
+/etc/passwd and /etc/shadow , T1003.008
+Launch Agent , T1543.001
+System Services , T1569
+Windows Command Shell , T1059.003
+Proc Memory , T1055.009
+Compiled HTML File , T1223
+Acquire Access , T1650
+Patch System Image , T1601.001
+Silver Ticket , T1558.002
+Data from Information Repositories , T1213
+Clear Persistence , T1070.009
+Clear Command History , T1146
+Windows Credential Manager , T1555.004
+Emond , T1519
+Spearphishing via Service , T1194
+Hardware Additions , T1200
+Server Software Component , T1505
+Data Destruction , T1485
+Non-Standard Encoding , T1132.002
+Domain Controller Authentication , T1556.001
+Transfer Data to Cloud Account , T1537
+HTML Smuggling , T1027.006
+Reversible Encryption , T1556.005
+Command Obfuscation , T1027.010
+Install Root Certificate , T1130
+Data Encrypted , T1022
+File Deletion , T1070.004
+Drive-by Compromise , T1189
+Network Denial of Service , T1498
+Cloud Administration Command , T1651
+Installer Packages , T1546.016
+Scanning IP Blocks , T1595.001
+Hidden Files and Directories , T1158
+Template Injection , T1221
+RC Scripts , T1037.004
+Access Token Manipulation , T1134
+Time Providers , T1209
+Multi-Factor Authentication Interception , T1111
+Launch Agent , T1159
+Software Packing , T1027.002
+Serverless , T1584.007
+Web Protocols , T1071.001
+Visual Basic , T1059.005
+Hidden File System , T1564.005
+Systemd Service , T1543.002
+RDP Hijacking , T1563.002
+Create Account , T1136
+XDG Autostart Entries , T1547.013
+Server , T1584.004
+Cloud Service Discovery , T1526
+Space after Filename , T1151
+Remote System Discovery , T1018
+Network Service Discovery , T1046
+Domain Properties , T1590.001
+Software Discovery , T1518
+Cloud Service Dashboard , T1538
+Thread Local Storage , T1055.005
+Debugger Evasion , T1622
+Space after Filename , T1036.006
+Re-opened Applications , T1547.007
+SEO Poisoning , T1608.006
+Pass the Hash , T1550.002
+Exfiltration Over Physical Medium , T1052
+DLL Side-Loading , T1574.002
+Ingress Tool Transfer , T1105
+SyncAppvPublishingServer , T1216.002
+Additional Email Delegate Permissions , T1098.002
+Code Signing Certificates , T1588.003
+Network Share Connection Removal , T1126
+Serverless Execution , T1648
+TCC Manipulation , T1548.006
+Windows Management Instrumentation Event Subscription , T1084
+Launch Daemon , T1160
+Ptrace System Calls , T1055.008
+Power Settings , T1653
+Dynamic API Resolution , T1027.007
+Remote Desktop Protocol , T1021.001
+Logon Script (Windows) , T1037.001
+ListPlanting , T1055.015
+Hide Infrastructure , T1665
+Domain or Tenant Policy Modification , T1484
+XSL Script Processing , T1220
+Scan Databases , T1596.005
+Hidden Files and Directories , T1564.001
+Create Snapshot , T1578.001
+Determine Physical Locations , T1591.001
+Office Test , T1137.002
+Develop Capabilities , T1587
+Dynamic Data Exchange , T1173
+NTDS , T1003.003
+SNMP (MIB Dump) , T1602.001
+Steganography , T1001.002
+Malicious Link , T1204.001
+Application Access Token , T1550.001
+LSASS Driver , T1547.008
+Service Execution , T1569.002
+Cloud Accounts , T1078.004
+Environmental Keying , T1480.001
+Fallback Channels , T1008
+NTFS File Attributes , T1564.004
+Kerberoasting , T1558.003
+NTFS File Attributes , T1096
+DCSync , T1003.006
+System Time Discovery , T1124
+At , T1053.002
+Service Execution , T1035
+Dynamic-link Library Injection , T1055.001
+PowerShell , T1086
+Exploits , T1588.005
+Modify Authentication Process , T1556
+Credential API Hooking , T1056.004
+Firmware Corruption , T1495
+Inhibit System Recovery , T1490
+Netsh Helper DLL , T1546.007
+Spearphishing via Service , T1566.003
+Internal Proxy , T1090.001
+System Script Proxy Execution , T1216
+Custom Command and Control Protocol , T1094
+Dead Drop Resolver , T1102.001
+InstallUtil , T1118
+Junk Data , T1001.001
+Spearphishing Service , T1598.001
+Commonly Used Port , T1043
+Container API , T1552.007
+Domains , T1584.001
+SQL Stored Procedures , T1505.001
+Network Device Authentication , T1556.004
+Disk Content Wipe , T1561.001
+Exfiltration Over Unencrypted Non-C2 Protocol , T1048.003
+Dylib Hijacking , T1574.004
+Downgrade System Image , T1601.002
+Local Accounts , T1078.003
+Exploitation for Defense Evasion , T1211
+Trusted Developer Utilities Proxy Execution , T1127
+System Shutdown/Reboot , T1529
+MMC , T1218.014
+Process Argument Spoofing , T1564.010
+Windows Admin Shares , T1077
+COR_PROFILER , T1574.012
