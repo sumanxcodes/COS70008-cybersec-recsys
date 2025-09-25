@@ -1,0 +1,3640 @@
+[
+  {
+    "ORG_row":0,
+    "ORGID":1,
+    "Industry":"Ransomware",
+    "Region":"South America",
+    "Size":"Small",
+    "SecurityBudget":"Medium",
+    "PrimarySecurityTeam":"In-house",
+    "Maturity":4,
+    "Complexity":4,
+    "ExerciseFrequency":120,
+    "Threats":"Remote Access Trojan",
+    "TTPs_raw":"Signed Binary Proxy Execution;Network Service Scanning",
+    "Techniques_resolved":[
+      {
+        "input":"Signed Binary Proxy Execution",
+        "how_matched":"alias_id",
+        "tid":"T1218",
+        "name":"System Binary Proxy Execution",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Network Service Scanning",
+        "how_matched":"alias_id",
+        "tid":"T1046",
+        "name":"Network Service Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+
+    ],
+    "Tactics_covered":[
+      "defense-evasion",
+      "discovery"
+    ],
+    "DataSources_suggested":[
+      "Cloud Service",
+      "Command",
+      "File",
+      "Module",
+      "Network Traffic",
+      "Process",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":1,
+    "ORGID":2,
+    "Industry":"Supply Chain",
+    "Region":"Europe",
+    "Size":"Large",
+    "SecurityBudget":"Medium",
+    "PrimarySecurityTeam":"In-house",
+    "Maturity":1,
+    "Complexity":5,
+    "ExerciseFrequency":180,
+    "Threats":"DDoS;Web Shell",
+    "TTPs_raw":"Command and Scripting Interpreter;Service Stop;Discovery;Defense Evasion;Exfiltration",
+    "Techniques_resolved":[
+      {
+        "input":"Command and Scripting Interpreter",
+        "how_matched":"alias_id",
+        "tid":"T1059",
+        "name":"Command and Scripting Interpreter",
+        "tactics":[
+          "execution"
+        ]
+      },
+      {
+        "input":"Service Stop",
+        "how_matched":"alias_id",
+        "tid":"T1489",
+        "name":"Service Stop",
+        "tactics":[
+          "impact"
+        ]
+      },
+      {
+        "input":"Discovery",
+        "how_matched":"name_contains",
+        "tid":"T1033",
+        "name":"System Owner\/User Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      },
+      {
+        "input":"Defense Evasion",
+        "how_matched":"name_contains",
+        "tid":"T1211",
+        "name":"Exploitation for Defense Evasion",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Exfiltration",
+        "how_matched":"name_contains",
+        "tid":"T1567",
+        "name":"Exfiltration Over Web Service",
+        "tactics":[
+          "exfiltration"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+
+    ],
+    "Tactics_covered":[
+      "defense-evasion",
+      "discovery",
+      "execution",
+      "exfiltration",
+      "impact"
+    ],
+    "DataSources_suggested":[
+      "Active Directory",
+      "Application Log",
+      "Command",
+      "File",
+      "Module",
+      "Network Traffic",
+      "Process",
+      "Script",
+      "Service",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":2,
+    "ORGID":3,
+    "Industry":"Insider Threat",
+    "Region":"North America",
+    "Size":"Small",
+    "SecurityBudget":"Medium",
+    "PrimarySecurityTeam":"Outsourced",
+    "Maturity":4,
+    "Complexity":4,
+    "ExerciseFrequency":90,
+    "Threats":"Banking Trojan;Ransomware;Crypto Miner",
+    "TTPs_raw":"Data Exfiltration Over Web Service;Network Service Scanning;User Execution;Malicious File;Brute Force;Access Token Manipulation;Data Staged;Bypass User Account Control;Scheduled Task\/Job;Windows Management Instrumentation",
+    "Techniques_resolved":[
+      {
+        "input":"Data Exfiltration Over Web Service",
+        "how_matched":"alias_id",
+        "tid":"T1567.002",
+        "name":"Exfiltration to Cloud Storage",
+        "tactics":[
+          "exfiltration"
+        ]
+      },
+      {
+        "input":"Network Service Scanning",
+        "how_matched":"alias_id",
+        "tid":"T1046",
+        "name":"Network Service Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      },
+      {
+        "input":"User Execution",
+        "how_matched":"alias_id",
+        "tid":"T1204",
+        "name":"User Execution",
+        "tactics":[
+          "execution"
+        ]
+      },
+      {
+        "input":"Brute Force",
+        "how_matched":"alias_id",
+        "tid":"T1110",
+        "name":"Brute Force",
+        "tactics":[
+          "credential-access"
+        ]
+      },
+      {
+        "input":"Access Token Manipulation",
+        "how_matched":"alias_id",
+        "tid":"T1134",
+        "name":"Access Token Manipulation",
+        "tactics":[
+          "defense-evasion",
+          "privilege-escalation"
+        ]
+      },
+      {
+        "input":"Data Staged",
+        "how_matched":"alias_id",
+        "tid":"T1074",
+        "name":"Data Staged",
+        "tactics":[
+          "collection"
+        ]
+      },
+      {
+        "input":"Bypass User Account Control",
+        "how_matched":"alias_id",
+        "tid":"T1548.002",
+        "name":"Bypass User Account Control",
+        "tactics":[
+          "privilege-escalation",
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Scheduled Task\/Job",
+        "how_matched":"alias_id",
+        "tid":"T1053",
+        "name":"Scheduled Task\/Job",
+        "tactics":[
+          "execution",
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      {
+        "input":"Windows Management Instrumentation",
+        "how_matched":"alias_id",
+        "tid":"T1047",
+        "name":"Windows Management Instrumentation",
+        "tactics":[
+          "execution"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+      "Malicious File"
+    ],
+    "Tactics_covered":[
+      "collection",
+      "credential-access",
+      "defense-evasion",
+      "discovery",
+      "execution",
+      "exfiltration",
+      "persistence",
+      "privilege-escalation"
+    ],
+    "DataSources_suggested":[
+      "Active Directory",
+      "Application Log",
+      "Cloud Service",
+      "Command",
+      "Container",
+      "File",
+      "Image",
+      "Instance",
+      "Network Traffic",
+      "Process",
+      "Scheduled Job",
+      "User Account",
+      "WMI",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":3,
+    "ORGID":4,
+    "Industry":"Banking Trojan",
+    "Region":"Africa",
+    "Size":"Medium",
+    "SecurityBudget":"Low",
+    "PrimarySecurityTeam":"Hybrid",
+    "Maturity":1,
+    "Complexity":4,
+    "ExerciseFrequency":300,
+    "Threats":"Phishing;Banking Trojan",
+    "TTPs_raw":"Spearphishing Attachment;Signed Binary Proxy Execution;Phishing;Execution;Command and Control",
+    "Techniques_resolved":[
+      {
+        "input":"Spearphishing Attachment",
+        "how_matched":"name_exact",
+        "tid":"T1598.002",
+        "name":"Spearphishing Attachment",
+        "tactics":[
+          "reconnaissance"
+        ]
+      },
+      {
+        "input":"Signed Binary Proxy Execution",
+        "how_matched":"alias_id",
+        "tid":"T1218",
+        "name":"System Binary Proxy Execution",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Phishing",
+        "how_matched":"name_exact",
+        "tid":"T1566",
+        "name":"Phishing",
+        "tactics":[
+          "initial-access"
+        ]
+      },
+      {
+        "input":"Execution",
+        "how_matched":"name_contains",
+        "tid":"T1548.004",
+        "name":"Elevated Execution with Prompt",
+        "tactics":[
+          "privilege-escalation",
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Command and Control",
+        "how_matched":"name_contains",
+        "tid":"T1094",
+        "name":"Custom Command and Control Protocol",
+        "tactics":[
+          "command-and-control"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+
+    ],
+    "Tactics_covered":[
+      "command-and-control",
+      "defense-evasion",
+      "initial-access",
+      "privilege-escalation",
+      "reconnaissance"
+    ],
+    "DataSources_suggested":[
+      "Application Log",
+      "Command",
+      "File",
+      "Module",
+      "Network Traffic",
+      "Process",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":4,
+    "ORGID":5,
+    "Industry":"Banking Trojan",
+    "Region":"Africa",
+    "Size":"Medium",
+    "SecurityBudget":"High",
+    "PrimarySecurityTeam":"In-house",
+    "Maturity":4,
+    "Complexity":5,
+    "ExerciseFrequency":180,
+    "Threats":"Phishing",
+    "TTPs_raw":"Data Staged;Unsecured Credentials;User Execution;Masquerading",
+    "Techniques_resolved":[
+      {
+        "input":"Data Staged",
+        "how_matched":"alias_id",
+        "tid":"T1074",
+        "name":"Data Staged",
+        "tactics":[
+          "collection"
+        ]
+      },
+      {
+        "input":"Unsecured Credentials",
+        "how_matched":"name_exact",
+        "tid":"T1552",
+        "name":"Unsecured Credentials",
+        "tactics":[
+          "credential-access"
+        ]
+      },
+      {
+        "input":"User Execution",
+        "how_matched":"alias_id",
+        "tid":"T1204",
+        "name":"User Execution",
+        "tactics":[
+          "execution"
+        ]
+      },
+      {
+        "input":"Masquerading",
+        "how_matched":"name_exact",
+        "tid":"T1036",
+        "name":"Masquerading",
+        "tactics":[
+          "defense-evasion"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+
+    ],
+    "Tactics_covered":[
+      "collection",
+      "credential-access",
+      "defense-evasion",
+      "execution"
+    ],
+    "DataSources_suggested":[
+      "Application Log",
+      "Command",
+      "Container",
+      "File",
+      "Image",
+      "Instance",
+      "Network Traffic",
+      "Process",
+      "Scheduled Job",
+      "Service",
+      "User Account",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":5,
+    "ORGID":6,
+    "Industry":"Web Shell",
+    "Region":"Europe",
+    "Size":"Medium",
+    "SecurityBudget":"Low",
+    "PrimarySecurityTeam":"Hybrid",
+    "Maturity":3,
+    "Complexity":2,
+    "ExerciseFrequency":180,
+    "Threats":"Data Breach;Supply Chain",
+    "TTPs_raw":"Account Discovery;Initial Access;Boot or Logon Autostart Execution;Remote Services;Phishing;Process Injection",
+    "Techniques_resolved":[
+      {
+        "input":"Account Discovery",
+        "how_matched":"name_exact",
+        "tid":"T1087",
+        "name":"Account Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      },
+      {
+        "input":"Boot or Logon Autostart Execution",
+        "how_matched":"name_exact",
+        "tid":"T1547",
+        "name":"Boot or Logon Autostart Execution",
+        "tactics":[
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      {
+        "input":"Remote Services",
+        "how_matched":"name_exact",
+        "tid":"T1021",
+        "name":"Remote Services",
+        "tactics":[
+          "lateral-movement"
+        ]
+      },
+      {
+        "input":"Phishing",
+        "how_matched":"name_exact",
+        "tid":"T1566",
+        "name":"Phishing",
+        "tactics":[
+          "initial-access"
+        ]
+      },
+      {
+        "input":"Process Injection",
+        "how_matched":"name_exact",
+        "tid":"T1055",
+        "name":"Process Injection",
+        "tactics":[
+          "defense-evasion",
+          "privilege-escalation"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+      "Initial Access"
+    ],
+    "Tactics_covered":[
+      "defense-evasion",
+      "discovery",
+      "initial-access",
+      "lateral-movement",
+      "persistence",
+      "privilege-escalation"
+    ],
+    "DataSources_suggested":[
+      "Application Log",
+      "Command",
+      "Driver",
+      "File",
+      "Kernel",
+      "Logon Session",
+      "Module",
+      "Network Share",
+      "Network Traffic",
+      "Process",
+      "WMI",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":6,
+    "ORGID":7,
+    "Industry":"Remote Access Trojan",
+    "Region":"Asia",
+    "Size":"Small",
+    "SecurityBudget":"Medium",
+    "PrimarySecurityTeam":"In-house",
+    "Maturity":1,
+    "Complexity":1,
+    "ExerciseFrequency":120,
+    "Threats":"Web Shell;Insider Threat;Remote Access Trojan",
+    "TTPs_raw":"Execution;Drive-by Compromise;Signed Binary Proxy Execution;Valid Accounts;Privilege Escalation;Discovery;Impact;Exfiltration;Remote File Copy;Account Manipulation",
+    "Techniques_resolved":[
+      {
+        "input":"Execution",
+        "how_matched":"name_contains",
+        "tid":"T1548.004",
+        "name":"Elevated Execution with Prompt",
+        "tactics":[
+          "privilege-escalation",
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Drive-by Compromise",
+        "how_matched":"name_exact",
+        "tid":"T1189",
+        "name":"Drive-by Compromise",
+        "tactics":[
+          "initial-access"
+        ]
+      },
+      {
+        "input":"Signed Binary Proxy Execution",
+        "how_matched":"alias_id",
+        "tid":"T1218",
+        "name":"System Binary Proxy Execution",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Valid Accounts",
+        "how_matched":"alias_id",
+        "tid":"T1078",
+        "name":"Valid Accounts",
+        "tactics":[
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      },
+      {
+        "input":"Privilege Escalation",
+        "how_matched":"name_contains",
+        "tid":"T1068",
+        "name":"Exploitation for Privilege Escalation",
+        "tactics":[
+          "privilege-escalation"
+        ]
+      },
+      {
+        "input":"Discovery",
+        "how_matched":"name_contains",
+        "tid":"T1033",
+        "name":"System Owner\/User Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      },
+      {
+        "input":"Impact",
+        "how_matched":"name_contains",
+        "tid":"T1486",
+        "name":"Data Encrypted for Impact",
+        "tactics":[
+          "impact"
+        ]
+      },
+      {
+        "input":"Exfiltration",
+        "how_matched":"name_contains",
+        "tid":"T1567",
+        "name":"Exfiltration Over Web Service",
+        "tactics":[
+          "exfiltration"
+        ]
+      },
+      {
+        "input":"Account Manipulation",
+        "how_matched":"name_exact",
+        "tid":"T1098",
+        "name":"Account Manipulation",
+        "tactics":[
+          "persistence",
+          "privilege-escalation"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+      "Remote File Copy"
+    ],
+    "Tactics_covered":[
+      "defense-evasion",
+      "discovery",
+      "exfiltration",
+      "impact",
+      "initial-access",
+      "persistence",
+      "privilege-escalation"
+    ],
+    "DataSources_suggested":[
+      "Active Directory",
+      "Application Log",
+      "Cloud Storage",
+      "Command",
+      "Driver",
+      "File",
+      "Group",
+      "Logon Session",
+      "Module",
+      "Network Share",
+      "Network Traffic",
+      "Process",
+      "User Account",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":7,
+    "ORGID":8,
+    "Industry":"Web Shell",
+    "Region":"North America",
+    "Size":"Small",
+    "SecurityBudget":"Low",
+    "PrimarySecurityTeam":"In-house",
+    "Maturity":2,
+    "Complexity":1,
+    "ExerciseFrequency":60,
+    "Threats":"Phishing",
+    "TTPs_raw":"Defense Evasion;Scripting;Data Staged;Account Manipulation",
+    "Techniques_resolved":[
+      {
+        "input":"Defense Evasion",
+        "how_matched":"name_contains",
+        "tid":"T1211",
+        "name":"Exploitation for Defense Evasion",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Scripting",
+        "how_matched":"name_exact",
+        "tid":"T1064",
+        "name":"Scripting",
+        "tactics":[
+          "defense-evasion",
+          "execution"
+        ]
+      },
+      {
+        "input":"Data Staged",
+        "how_matched":"alias_id",
+        "tid":"T1074",
+        "name":"Data Staged",
+        "tactics":[
+          "collection"
+        ]
+      },
+      {
+        "input":"Account Manipulation",
+        "how_matched":"name_exact",
+        "tid":"T1098",
+        "name":"Account Manipulation",
+        "tactics":[
+          "persistence",
+          "privilege-escalation"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+
+    ],
+    "Tactics_covered":[
+      "collection",
+      "defense-evasion",
+      "execution",
+      "persistence",
+      "privilege-escalation"
+    ],
+    "DataSources_suggested":[
+      "Active Directory",
+      "Application Log",
+      "Command",
+      "File",
+      "Group",
+      "Process",
+      "User Account",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":8,
+    "ORGID":9,
+    "Industry":"DDoS",
+    "Region":"South America",
+    "Size":"Small",
+    "SecurityBudget":"Low",
+    "PrimarySecurityTeam":"Hybrid",
+    "Maturity":4,
+    "Complexity":2,
+    "ExerciseFrequency":330,
+    "Threats":"Web Shell;Remote Access Trojan",
+    "TTPs_raw":"Command and Scripting Interpreter;Data Staged;File and Directory Discovery;Exfiltration;Remote File Copy;Scheduled Task\/Job",
+    "Techniques_resolved":[
+      {
+        "input":"Command and Scripting Interpreter",
+        "how_matched":"alias_id",
+        "tid":"T1059",
+        "name":"Command and Scripting Interpreter",
+        "tactics":[
+          "execution"
+        ]
+      },
+      {
+        "input":"Data Staged",
+        "how_matched":"alias_id",
+        "tid":"T1074",
+        "name":"Data Staged",
+        "tactics":[
+          "collection"
+        ]
+      },
+      {
+        "input":"File and Directory Discovery",
+        "how_matched":"name_exact",
+        "tid":"T1083",
+        "name":"File and Directory Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      },
+      {
+        "input":"Exfiltration",
+        "how_matched":"name_contains",
+        "tid":"T1567",
+        "name":"Exfiltration Over Web Service",
+        "tactics":[
+          "exfiltration"
+        ]
+      },
+      {
+        "input":"Scheduled Task\/Job",
+        "how_matched":"alias_id",
+        "tid":"T1053",
+        "name":"Scheduled Task\/Job",
+        "tactics":[
+          "execution",
+          "persistence",
+          "privilege-escalation"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+      "Remote File Copy"
+    ],
+    "Tactics_covered":[
+      "collection",
+      "discovery",
+      "execution",
+      "exfiltration",
+      "persistence",
+      "privilege-escalation"
+    ],
+    "DataSources_suggested":[
+      "Application Log",
+      "Command",
+      "Container",
+      "File",
+      "Module",
+      "Network Traffic",
+      "Process",
+      "Scheduled Job",
+      "Script",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":9,
+    "ORGID":10,
+    "Industry":"Remote Access Trojan",
+    "Region":"Europe",
+    "Size":"Medium",
+    "SecurityBudget":"Medium",
+    "PrimarySecurityTeam":"Hybrid",
+    "Maturity":4,
+    "Complexity":1,
+    "ExerciseFrequency":210,
+    "Threats":"Ransomware",
+    "TTPs_raw":"Credential Access;Remote System Discovery;Process Injection",
+    "Techniques_resolved":[
+      {
+        "input":"Credential Access",
+        "how_matched":"name_contains",
+        "tid":"T1212",
+        "name":"Exploitation for Credential Access",
+        "tactics":[
+          "credential-access"
+        ]
+      },
+      {
+        "input":"Remote System Discovery",
+        "how_matched":"name_exact",
+        "tid":"T1018",
+        "name":"Remote System Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      },
+      {
+        "input":"Process Injection",
+        "how_matched":"name_exact",
+        "tid":"T1055",
+        "name":"Process Injection",
+        "tactics":[
+          "defense-evasion",
+          "privilege-escalation"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+
+    ],
+    "Tactics_covered":[
+      "credential-access",
+      "defense-evasion",
+      "discovery",
+      "privilege-escalation"
+    ],
+    "DataSources_suggested":[
+      "Application Log",
+      "Command",
+      "File",
+      "Module",
+      "Network Traffic",
+      "Process",
+      "User Account"
+    ]
+  },
+  {
+    "ORG_row":10,
+    "ORGID":11,
+    "Industry":"Web Shell",
+    "Region":"Europe",
+    "Size":"Large",
+    "SecurityBudget":"Medium",
+    "PrimarySecurityTeam":"Outsourced",
+    "Maturity":3,
+    "Complexity":3,
+    "ExerciseFrequency":210,
+    "Threats":"DDoS;Remote Access Trojan",
+    "TTPs_raw":"Defense Evasion;Valid Accounts;Service Stop;Malicious File;Drive-by Compromise;Rootkit",
+    "Techniques_resolved":[
+      {
+        "input":"Defense Evasion",
+        "how_matched":"name_contains",
+        "tid":"T1211",
+        "name":"Exploitation for Defense Evasion",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Valid Accounts",
+        "how_matched":"alias_id",
+        "tid":"T1078",
+        "name":"Valid Accounts",
+        "tactics":[
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      },
+      {
+        "input":"Service Stop",
+        "how_matched":"alias_id",
+        "tid":"T1489",
+        "name":"Service Stop",
+        "tactics":[
+          "impact"
+        ]
+      },
+      {
+        "input":"Drive-by Compromise",
+        "how_matched":"name_exact",
+        "tid":"T1189",
+        "name":"Drive-by Compromise",
+        "tactics":[
+          "initial-access"
+        ]
+      },
+      {
+        "input":"Rootkit",
+        "how_matched":"name_exact",
+        "tid":"T1014",
+        "name":"Rootkit",
+        "tactics":[
+          "defense-evasion"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+      "Malicious File"
+    ],
+    "Tactics_covered":[
+      "defense-evasion",
+      "impact",
+      "initial-access",
+      "persistence",
+      "privilege-escalation"
+    ],
+    "DataSources_suggested":[
+      "Application Log",
+      "Command",
+      "Drive",
+      "File",
+      "Firmware",
+      "Logon Session",
+      "Network Traffic",
+      "Process",
+      "Service",
+      "User Account",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":11,
+    "ORGID":12,
+    "Industry":"Supply Chain",
+    "Region":"North America",
+    "Size":"Small",
+    "SecurityBudget":"High",
+    "PrimarySecurityTeam":"Hybrid",
+    "Maturity":3,
+    "Complexity":2,
+    "ExerciseFrequency":240,
+    "Threats":"Phishing;Data Breach;Crypto Miner",
+    "TTPs_raw":"Data Staged;Malicious File;Initial Access;Application Window Discovery;Unsecured Credentials;Exfiltration;Boot or Logon Autostart Execution;Obfuscated Files or Information;Execution",
+    "Techniques_resolved":[
+      {
+        "input":"Data Staged",
+        "how_matched":"alias_id",
+        "tid":"T1074",
+        "name":"Data Staged",
+        "tactics":[
+          "collection"
+        ]
+      },
+      {
+        "input":"Application Window Discovery",
+        "how_matched":"name_exact",
+        "tid":"T1010",
+        "name":"Application Window Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      },
+      {
+        "input":"Unsecured Credentials",
+        "how_matched":"name_exact",
+        "tid":"T1552",
+        "name":"Unsecured Credentials",
+        "tactics":[
+          "credential-access"
+        ]
+      },
+      {
+        "input":"Exfiltration",
+        "how_matched":"name_contains",
+        "tid":"T1567",
+        "name":"Exfiltration Over Web Service",
+        "tactics":[
+          "exfiltration"
+        ]
+      },
+      {
+        "input":"Boot or Logon Autostart Execution",
+        "how_matched":"name_exact",
+        "tid":"T1547",
+        "name":"Boot or Logon Autostart Execution",
+        "tactics":[
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      {
+        "input":"Obfuscated Files or Information",
+        "how_matched":"name_exact",
+        "tid":"T1027",
+        "name":"Obfuscated Files or Information",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Execution",
+        "how_matched":"name_contains",
+        "tid":"T1548.004",
+        "name":"Elevated Execution with Prompt",
+        "tactics":[
+          "privilege-escalation",
+          "defense-evasion"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+      "Malicious File",
+      "Initial Access"
+    ],
+    "Tactics_covered":[
+      "collection",
+      "credential-access",
+      "defense-evasion",
+      "discovery",
+      "exfiltration",
+      "persistence",
+      "privilege-escalation"
+    ],
+    "DataSources_suggested":[
+      "Application Log",
+      "Command",
+      "Driver",
+      "File",
+      "Kernel",
+      "Module",
+      "Network Traffic",
+      "Process",
+      "Script",
+      "User Account",
+      "WMI",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":12,
+    "ORGID":13,
+    "Industry":"Remote Access Trojan",
+    "Region":"Oceania",
+    "Size":"Medium",
+    "SecurityBudget":"High",
+    "PrimarySecurityTeam":"Hybrid",
+    "Maturity":1,
+    "Complexity":1,
+    "ExerciseFrequency":240,
+    "Threats":"Ransomware",
+    "TTPs_raw":"Trusted Relationship;Boot or Logon Autostart Execution;Brute Force;Initial Access",
+    "Techniques_resolved":[
+      {
+        "input":"Trusted Relationship",
+        "how_matched":"name_exact",
+        "tid":"T1199",
+        "name":"Trusted Relationship",
+        "tactics":[
+          "initial-access"
+        ]
+      },
+      {
+        "input":"Boot or Logon Autostart Execution",
+        "how_matched":"name_exact",
+        "tid":"T1547",
+        "name":"Boot or Logon Autostart Execution",
+        "tactics":[
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      {
+        "input":"Brute Force",
+        "how_matched":"alias_id",
+        "tid":"T1110",
+        "name":"Brute Force",
+        "tactics":[
+          "credential-access"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+      "Initial Access"
+    ],
+    "Tactics_covered":[
+      "credential-access",
+      "initial-access",
+      "persistence",
+      "privilege-escalation"
+    ],
+    "DataSources_suggested":[
+      "Application Log",
+      "Command",
+      "Driver",
+      "File",
+      "Kernel",
+      "Logon Session",
+      "Module",
+      "Network Traffic",
+      "Process",
+      "User Account",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":13,
+    "ORGID":14,
+    "Industry":"Insider Threat",
+    "Region":"North America",
+    "Size":"Medium",
+    "SecurityBudget":"High",
+    "PrimarySecurityTeam":"In-house",
+    "Maturity":4,
+    "Complexity":5,
+    "ExerciseFrequency":180,
+    "Threats":"Banking Trojan;Remote Access Trojan",
+    "TTPs_raw":"Network Service Scanning;Drive-by Compromise;Access Token Manipulation;Initial Access;Remote System Discovery;Valid Accounts;Obfuscated Files or Information",
+    "Techniques_resolved":[
+      {
+        "input":"Network Service Scanning",
+        "how_matched":"alias_id",
+        "tid":"T1046",
+        "name":"Network Service Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      },
+      {
+        "input":"Drive-by Compromise",
+        "how_matched":"name_exact",
+        "tid":"T1189",
+        "name":"Drive-by Compromise",
+        "tactics":[
+          "initial-access"
+        ]
+      },
+      {
+        "input":"Access Token Manipulation",
+        "how_matched":"alias_id",
+        "tid":"T1134",
+        "name":"Access Token Manipulation",
+        "tactics":[
+          "defense-evasion",
+          "privilege-escalation"
+        ]
+      },
+      {
+        "input":"Remote System Discovery",
+        "how_matched":"name_exact",
+        "tid":"T1018",
+        "name":"Remote System Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      },
+      {
+        "input":"Valid Accounts",
+        "how_matched":"alias_id",
+        "tid":"T1078",
+        "name":"Valid Accounts",
+        "tactics":[
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      },
+      {
+        "input":"Obfuscated Files or Information",
+        "how_matched":"name_exact",
+        "tid":"T1027",
+        "name":"Obfuscated Files or Information",
+        "tactics":[
+          "defense-evasion"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+      "Initial Access"
+    ],
+    "Tactics_covered":[
+      "defense-evasion",
+      "discovery",
+      "initial-access",
+      "persistence",
+      "privilege-escalation"
+    ],
+    "DataSources_suggested":[
+      "Active Directory",
+      "Application Log",
+      "Cloud Service",
+      "Command",
+      "File",
+      "Logon Session",
+      "Module",
+      "Network Traffic",
+      "Process",
+      "Script",
+      "User Account",
+      "WMI",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":14,
+    "ORGID":15,
+    "Industry":"DDoS",
+    "Region":"Oceania",
+    "Size":"Large",
+    "SecurityBudget":"Medium",
+    "PrimarySecurityTeam":"Outsourced",
+    "Maturity":2,
+    "Complexity":1,
+    "ExerciseFrequency":300,
+    "Threats":"Remote Access Trojan;Banking Trojan",
+    "TTPs_raw":"Account Manipulation;Exfiltration;Rootkit;Application Layer Protocol;Privilege Escalation;Credential Access",
+    "Techniques_resolved":[
+      {
+        "input":"Account Manipulation",
+        "how_matched":"name_exact",
+        "tid":"T1098",
+        "name":"Account Manipulation",
+        "tactics":[
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      {
+        "input":"Exfiltration",
+        "how_matched":"name_contains",
+        "tid":"T1567",
+        "name":"Exfiltration Over Web Service",
+        "tactics":[
+          "exfiltration"
+        ]
+      },
+      {
+        "input":"Rootkit",
+        "how_matched":"name_exact",
+        "tid":"T1014",
+        "name":"Rootkit",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Application Layer Protocol",
+        "how_matched":"name_exact",
+        "tid":"T1071",
+        "name":"Application Layer Protocol",
+        "tactics":[
+          "command-and-control"
+        ]
+      },
+      {
+        "input":"Privilege Escalation",
+        "how_matched":"name_contains",
+        "tid":"T1068",
+        "name":"Exploitation for Privilege Escalation",
+        "tactics":[
+          "privilege-escalation"
+        ]
+      },
+      {
+        "input":"Credential Access",
+        "how_matched":"name_contains",
+        "tid":"T1212",
+        "name":"Exploitation for Credential Access",
+        "tactics":[
+          "credential-access"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+
+    ],
+    "Tactics_covered":[
+      "command-and-control",
+      "credential-access",
+      "defense-evasion",
+      "exfiltration",
+      "persistence",
+      "privilege-escalation"
+    ],
+    "DataSources_suggested":[
+      "Active Directory",
+      "Application Log",
+      "Command",
+      "Drive",
+      "Driver",
+      "File",
+      "Firmware",
+      "Group",
+      "Network Traffic",
+      "Process",
+      "User Account"
+    ]
+  },
+  {
+    "ORG_row":15,
+    "ORGID":16,
+    "Industry":"Ransomware",
+    "Region":"South America",
+    "Size":"Large",
+    "SecurityBudget":"High",
+    "PrimarySecurityTeam":"Outsourced",
+    "Maturity":2,
+    "Complexity":4,
+    "ExerciseFrequency":300,
+    "Threats":"Insider Threat;DDoS;Supply Chain",
+    "TTPs_raw":"Process Injection;Data Staged;Account Manipulation;Discovery;Command and Scripting Interpreter;System Information Discovery;Valid Accounts;Boot or Logon Autostart Execution;Remote System Discovery",
+    "Techniques_resolved":[
+      {
+        "input":"Process Injection",
+        "how_matched":"name_exact",
+        "tid":"T1055",
+        "name":"Process Injection",
+        "tactics":[
+          "defense-evasion",
+          "privilege-escalation"
+        ]
+      },
+      {
+        "input":"Data Staged",
+        "how_matched":"alias_id",
+        "tid":"T1074",
+        "name":"Data Staged",
+        "tactics":[
+          "collection"
+        ]
+      },
+      {
+        "input":"Account Manipulation",
+        "how_matched":"name_exact",
+        "tid":"T1098",
+        "name":"Account Manipulation",
+        "tactics":[
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      {
+        "input":"Discovery",
+        "how_matched":"name_contains",
+        "tid":"T1033",
+        "name":"System Owner\/User Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      },
+      {
+        "input":"Command and Scripting Interpreter",
+        "how_matched":"alias_id",
+        "tid":"T1059",
+        "name":"Command and Scripting Interpreter",
+        "tactics":[
+          "execution"
+        ]
+      },
+      {
+        "input":"System Information Discovery",
+        "how_matched":"name_exact",
+        "tid":"T1082",
+        "name":"System Information Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      },
+      {
+        "input":"Valid Accounts",
+        "how_matched":"alias_id",
+        "tid":"T1078",
+        "name":"Valid Accounts",
+        "tactics":[
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      },
+      {
+        "input":"Boot or Logon Autostart Execution",
+        "how_matched":"name_exact",
+        "tid":"T1547",
+        "name":"Boot or Logon Autostart Execution",
+        "tactics":[
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      {
+        "input":"Remote System Discovery",
+        "how_matched":"name_exact",
+        "tid":"T1018",
+        "name":"Remote System Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+
+    ],
+    "Tactics_covered":[
+      "collection",
+      "defense-evasion",
+      "discovery",
+      "execution",
+      "initial-access",
+      "persistence",
+      "privilege-escalation"
+    ],
+    "DataSources_suggested":[
+      "Active Directory",
+      "Command",
+      "Driver",
+      "File",
+      "Group",
+      "Kernel",
+      "Logon Session",
+      "Module",
+      "Network Traffic",
+      "Process",
+      "Script",
+      "User Account",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":16,
+    "ORGID":17,
+    "Industry":"Insider Threat",
+    "Region":"Europe",
+    "Size":"Small",
+    "SecurityBudget":"Medium",
+    "PrimarySecurityTeam":"Hybrid",
+    "Maturity":3,
+    "Complexity":2,
+    "ExerciseFrequency":210,
+    "Threats":"Insider Threat;DDoS;Crypto Miner",
+    "TTPs_raw":"Persistence;Defense Evasion;Password Spraying;System Information Discovery;Windows Management Instrumentation;Impact;Discovery;Privilege Escalation;Rootkit",
+    "Techniques_resolved":[
+      {
+        "input":"Persistence",
+        "how_matched":"name_contains",
+        "tid":"T1070.009",
+        "name":"Clear Persistence",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Defense Evasion",
+        "how_matched":"name_contains",
+        "tid":"T1211",
+        "name":"Exploitation for Defense Evasion",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Password Spraying",
+        "how_matched":"name_exact",
+        "tid":"T1110.003",
+        "name":"Password Spraying",
+        "tactics":[
+          "credential-access"
+        ]
+      },
+      {
+        "input":"System Information Discovery",
+        "how_matched":"name_exact",
+        "tid":"T1082",
+        "name":"System Information Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      },
+      {
+        "input":"Windows Management Instrumentation",
+        "how_matched":"alias_id",
+        "tid":"T1047",
+        "name":"Windows Management Instrumentation",
+        "tactics":[
+          "execution"
+        ]
+      },
+      {
+        "input":"Impact",
+        "how_matched":"name_contains",
+        "tid":"T1486",
+        "name":"Data Encrypted for Impact",
+        "tactics":[
+          "impact"
+        ]
+      },
+      {
+        "input":"Discovery",
+        "how_matched":"name_contains",
+        "tid":"T1033",
+        "name":"System Owner\/User Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      },
+      {
+        "input":"Privilege Escalation",
+        "how_matched":"name_contains",
+        "tid":"T1068",
+        "name":"Exploitation for Privilege Escalation",
+        "tactics":[
+          "privilege-escalation"
+        ]
+      },
+      {
+        "input":"Rootkit",
+        "how_matched":"name_exact",
+        "tid":"T1014",
+        "name":"Rootkit",
+        "tactics":[
+          "defense-evasion"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+
+    ],
+    "Tactics_covered":[
+      "credential-access",
+      "defense-evasion",
+      "discovery",
+      "execution",
+      "impact",
+      "privilege-escalation"
+    ],
+    "DataSources_suggested":[
+      "Active Directory",
+      "Application Log",
+      "Cloud Storage",
+      "Command",
+      "Drive",
+      "Driver",
+      "File",
+      "Firmware",
+      "Network Share",
+      "Network Traffic",
+      "Process",
+      "Scheduled Job",
+      "User Account",
+      "WMI",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":17,
+    "ORGID":18,
+    "Industry":"Supply Chain",
+    "Region":"Europe",
+    "Size":"Medium",
+    "SecurityBudget":"High",
+    "PrimarySecurityTeam":"In-house",
+    "Maturity":4,
+    "Complexity":1,
+    "ExerciseFrequency":30,
+    "Threats":"Web Shell;Data Breach",
+    "TTPs_raw":"Execution;Valid Accounts;Lateral Movement;Unsecured Credentials;Defense Evasion",
+    "Techniques_resolved":[
+      {
+        "input":"Execution",
+        "how_matched":"name_contains",
+        "tid":"T1548.004",
+        "name":"Elevated Execution with Prompt",
+        "tactics":[
+          "privilege-escalation",
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Valid Accounts",
+        "how_matched":"alias_id",
+        "tid":"T1078",
+        "name":"Valid Accounts",
+        "tactics":[
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      },
+      {
+        "input":"Unsecured Credentials",
+        "how_matched":"name_exact",
+        "tid":"T1552",
+        "name":"Unsecured Credentials",
+        "tactics":[
+          "credential-access"
+        ]
+      },
+      {
+        "input":"Defense Evasion",
+        "how_matched":"name_contains",
+        "tid":"T1211",
+        "name":"Exploitation for Defense Evasion",
+        "tactics":[
+          "defense-evasion"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+      "Lateral Movement"
+    ],
+    "Tactics_covered":[
+      "credential-access",
+      "defense-evasion",
+      "initial-access",
+      "persistence",
+      "privilege-escalation"
+    ],
+    "DataSources_suggested":[
+      "Application Log",
+      "Command",
+      "File",
+      "Logon Session",
+      "Process",
+      "User Account",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":18,
+    "ORGID":19,
+    "Industry":"Ransomware",
+    "Region":"Europe",
+    "Size":"Medium",
+    "SecurityBudget":"High",
+    "PrimarySecurityTeam":"In-house",
+    "Maturity":3,
+    "Complexity":4,
+    "ExerciseFrequency":240,
+    "Threats":"Web Shell",
+    "TTPs_raw":"Drive-by Compromise;Signed Binary Proxy Execution;Process Injection",
+    "Techniques_resolved":[
+      {
+        "input":"Drive-by Compromise",
+        "how_matched":"name_exact",
+        "tid":"T1189",
+        "name":"Drive-by Compromise",
+        "tactics":[
+          "initial-access"
+        ]
+      },
+      {
+        "input":"Signed Binary Proxy Execution",
+        "how_matched":"alias_id",
+        "tid":"T1218",
+        "name":"System Binary Proxy Execution",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Process Injection",
+        "how_matched":"name_exact",
+        "tid":"T1055",
+        "name":"Process Injection",
+        "tactics":[
+          "defense-evasion",
+          "privilege-escalation"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+
+    ],
+    "Tactics_covered":[
+      "defense-evasion",
+      "initial-access",
+      "privilege-escalation"
+    ],
+    "DataSources_suggested":[
+      "Application Log",
+      "Command",
+      "File",
+      "Module",
+      "Network Traffic",
+      "Process",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":19,
+    "ORGID":20,
+    "Industry":"Insider Threat",
+    "Region":"Africa",
+    "Size":"Large",
+    "SecurityBudget":"High",
+    "PrimarySecurityTeam":"Outsourced",
+    "Maturity":2,
+    "Complexity":4,
+    "ExerciseFrequency":240,
+    "Threats":"Data Breach;Remote Access Trojan;Ransomware",
+    "TTPs_raw":"File and Directory Discovery;Trusted Relationship;Process Injection;Command and Control;Application Layer Protocol;Service Stop;Custom Command and Control Protocol;Data Encrypted for Impact;Password Spraying;Credential Access;Lateral Movement",
+    "Techniques_resolved":[
+      {
+        "input":"File and Directory Discovery",
+        "how_matched":"name_exact",
+        "tid":"T1083",
+        "name":"File and Directory Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      },
+      {
+        "input":"Trusted Relationship",
+        "how_matched":"name_exact",
+        "tid":"T1199",
+        "name":"Trusted Relationship",
+        "tactics":[
+          "initial-access"
+        ]
+      },
+      {
+        "input":"Process Injection",
+        "how_matched":"name_exact",
+        "tid":"T1055",
+        "name":"Process Injection",
+        "tactics":[
+          "defense-evasion",
+          "privilege-escalation"
+        ]
+      },
+      {
+        "input":"Command and Control",
+        "how_matched":"name_contains",
+        "tid":"T1094",
+        "name":"Custom Command and Control Protocol",
+        "tactics":[
+          "command-and-control"
+        ]
+      },
+      {
+        "input":"Application Layer Protocol",
+        "how_matched":"name_exact",
+        "tid":"T1071",
+        "name":"Application Layer Protocol",
+        "tactics":[
+          "command-and-control"
+        ]
+      },
+      {
+        "input":"Service Stop",
+        "how_matched":"alias_id",
+        "tid":"T1489",
+        "name":"Service Stop",
+        "tactics":[
+          "impact"
+        ]
+      },
+      {
+        "input":"Custom Command and Control Protocol",
+        "how_matched":"name_exact",
+        "tid":"T1094",
+        "name":"Custom Command and Control Protocol",
+        "tactics":[
+          "command-and-control"
+        ]
+      },
+      {
+        "input":"Data Encrypted for Impact",
+        "how_matched":"name_exact",
+        "tid":"T1486",
+        "name":"Data Encrypted for Impact",
+        "tactics":[
+          "impact"
+        ]
+      },
+      {
+        "input":"Password Spraying",
+        "how_matched":"name_exact",
+        "tid":"T1110.003",
+        "name":"Password Spraying",
+        "tactics":[
+          "credential-access"
+        ]
+      },
+      {
+        "input":"Credential Access",
+        "how_matched":"name_contains",
+        "tid":"T1212",
+        "name":"Exploitation for Credential Access",
+        "tactics":[
+          "credential-access"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+      "Lateral Movement"
+    ],
+    "Tactics_covered":[
+      "command-and-control",
+      "credential-access",
+      "defense-evasion",
+      "discovery",
+      "impact",
+      "initial-access",
+      "privilege-escalation"
+    ],
+    "DataSources_suggested":[
+      "Application Log",
+      "Cloud Storage",
+      "Command",
+      "File",
+      "Logon Session",
+      "Module",
+      "Network Share",
+      "Network Traffic",
+      "Process",
+      "Service",
+      "User Account",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":20,
+    "ORGID":21,
+    "Industry":"Data Breach",
+    "Region":"North America",
+    "Size":"Medium",
+    "SecurityBudget":"Low",
+    "PrimarySecurityTeam":"Outsourced",
+    "Maturity":2,
+    "Complexity":2,
+    "ExerciseFrequency":240,
+    "Threats":"Ransomware;Supply Chain;Remote Access Trojan",
+    "TTPs_raw":"Command and Control;Obfuscated Files or Information;Pass the Hash;Malicious File;Network Service Scanning;Persistence;Phishing;Data Exfiltration Over Web Service;Remote Services;Discovery;Command and Scripting Interpreter",
+    "Techniques_resolved":[
+      {
+        "input":"Command and Control",
+        "how_matched":"name_contains",
+        "tid":"T1094",
+        "name":"Custom Command and Control Protocol",
+        "tactics":[
+          "command-and-control"
+        ]
+      },
+      {
+        "input":"Obfuscated Files or Information",
+        "how_matched":"name_exact",
+        "tid":"T1027",
+        "name":"Obfuscated Files or Information",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Pass the Hash",
+        "how_matched":"name_exact",
+        "tid":"T1550.002",
+        "name":"Pass the Hash",
+        "tactics":[
+          "defense-evasion",
+          "lateral-movement"
+        ]
+      },
+      {
+        "input":"Network Service Scanning",
+        "how_matched":"alias_id",
+        "tid":"T1046",
+        "name":"Network Service Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      },
+      {
+        "input":"Persistence",
+        "how_matched":"name_contains",
+        "tid":"T1070.009",
+        "name":"Clear Persistence",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Phishing",
+        "how_matched":"name_exact",
+        "tid":"T1566",
+        "name":"Phishing",
+        "tactics":[
+          "initial-access"
+        ]
+      },
+      {
+        "input":"Data Exfiltration Over Web Service",
+        "how_matched":"alias_id",
+        "tid":"T1567.002",
+        "name":"Exfiltration to Cloud Storage",
+        "tactics":[
+          "exfiltration"
+        ]
+      },
+      {
+        "input":"Remote Services",
+        "how_matched":"name_exact",
+        "tid":"T1021",
+        "name":"Remote Services",
+        "tactics":[
+          "lateral-movement"
+        ]
+      },
+      {
+        "input":"Discovery",
+        "how_matched":"name_contains",
+        "tid":"T1033",
+        "name":"System Owner\/User Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      },
+      {
+        "input":"Command and Scripting Interpreter",
+        "how_matched":"alias_id",
+        "tid":"T1059",
+        "name":"Command and Scripting Interpreter",
+        "tactics":[
+          "execution"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+      "Malicious File"
+    ],
+    "Tactics_covered":[
+      "command-and-control",
+      "defense-evasion",
+      "discovery",
+      "execution",
+      "exfiltration",
+      "initial-access",
+      "lateral-movement"
+    ],
+    "DataSources_suggested":[
+      "Active Directory",
+      "Application Log",
+      "Cloud Service",
+      "Command",
+      "File",
+      "Logon Session",
+      "Module",
+      "Network Share",
+      "Network Traffic",
+      "Process",
+      "Scheduled Job",
+      "Script",
+      "User Account",
+      "WMI",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":21,
+    "ORGID":22,
+    "Industry":"Web Shell",
+    "Region":"South America",
+    "Size":"Large",
+    "SecurityBudget":"Low",
+    "PrimarySecurityTeam":"In-house",
+    "Maturity":3,
+    "Complexity":5,
+    "ExerciseFrequency":300,
+    "Threats":"Remote Access Trojan;Web Shell",
+    "TTPs_raw":"Remote Services;Signed Binary Proxy Execution;Custom Command and Control Protocol;Lateral Movement;Rootkit;Data Staged;Drive-by Compromise",
+    "Techniques_resolved":[
+      {
+        "input":"Remote Services",
+        "how_matched":"name_exact",
+        "tid":"T1021",
+        "name":"Remote Services",
+        "tactics":[
+          "lateral-movement"
+        ]
+      },
+      {
+        "input":"Signed Binary Proxy Execution",
+        "how_matched":"alias_id",
+        "tid":"T1218",
+        "name":"System Binary Proxy Execution",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Custom Command and Control Protocol",
+        "how_matched":"name_exact",
+        "tid":"T1094",
+        "name":"Custom Command and Control Protocol",
+        "tactics":[
+          "command-and-control"
+        ]
+      },
+      {
+        "input":"Rootkit",
+        "how_matched":"name_exact",
+        "tid":"T1014",
+        "name":"Rootkit",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Data Staged",
+        "how_matched":"alias_id",
+        "tid":"T1074",
+        "name":"Data Staged",
+        "tactics":[
+          "collection"
+        ]
+      },
+      {
+        "input":"Drive-by Compromise",
+        "how_matched":"name_exact",
+        "tid":"T1189",
+        "name":"Drive-by Compromise",
+        "tactics":[
+          "initial-access"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+      "Lateral Movement"
+    ],
+    "Tactics_covered":[
+      "collection",
+      "command-and-control",
+      "defense-evasion",
+      "initial-access",
+      "lateral-movement"
+    ],
+    "DataSources_suggested":[
+      "Application Log",
+      "Command",
+      "Drive",
+      "File",
+      "Firmware",
+      "Logon Session",
+      "Module",
+      "Network Share",
+      "Network Traffic",
+      "Process",
+      "WMI",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":22,
+    "ORGID":23,
+    "Industry":"Phishing",
+    "Region":"Africa",
+    "Size":"Small",
+    "SecurityBudget":"Medium",
+    "PrimarySecurityTeam":"Hybrid",
+    "Maturity":3,
+    "Complexity":5,
+    "ExerciseFrequency":120,
+    "Threats":"Phishing;Web Shell",
+    "TTPs_raw":"Data Exfiltration Over Web Service;Account Manipulation;Unsecured Credentials;Privilege Escalation;Execution",
+    "Techniques_resolved":[
+      {
+        "input":"Data Exfiltration Over Web Service",
+        "how_matched":"alias_id",
+        "tid":"T1567.002",
+        "name":"Exfiltration to Cloud Storage",
+        "tactics":[
+          "exfiltration"
+        ]
+      },
+      {
+        "input":"Account Manipulation",
+        "how_matched":"name_exact",
+        "tid":"T1098",
+        "name":"Account Manipulation",
+        "tactics":[
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      {
+        "input":"Unsecured Credentials",
+        "how_matched":"name_exact",
+        "tid":"T1552",
+        "name":"Unsecured Credentials",
+        "tactics":[
+          "credential-access"
+        ]
+      },
+      {
+        "input":"Privilege Escalation",
+        "how_matched":"name_contains",
+        "tid":"T1068",
+        "name":"Exploitation for Privilege Escalation",
+        "tactics":[
+          "privilege-escalation"
+        ]
+      },
+      {
+        "input":"Execution",
+        "how_matched":"name_contains",
+        "tid":"T1548.004",
+        "name":"Elevated Execution with Prompt",
+        "tactics":[
+          "privilege-escalation",
+          "defense-evasion"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+
+    ],
+    "Tactics_covered":[
+      "credential-access",
+      "defense-evasion",
+      "exfiltration",
+      "persistence",
+      "privilege-escalation"
+    ],
+    "DataSources_suggested":[
+      "Active Directory",
+      "Application Log",
+      "Command",
+      "Driver",
+      "File",
+      "Group",
+      "Network Traffic",
+      "Process",
+      "User Account",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":23,
+    "ORGID":24,
+    "Industry":"Data Breach",
+    "Region":"North America",
+    "Size":"Small",
+    "SecurityBudget":"High",
+    "PrimarySecurityTeam":"Hybrid",
+    "Maturity":4,
+    "Complexity":2,
+    "ExerciseFrequency":30,
+    "Threats":"Supply Chain",
+    "TTPs_raw":"Phishing;Supply Chain Compromise;User Execution",
+    "Techniques_resolved":[
+      {
+        "input":"Phishing",
+        "how_matched":"name_exact",
+        "tid":"T1566",
+        "name":"Phishing",
+        "tactics":[
+          "initial-access"
+        ]
+      },
+      {
+        "input":"Supply Chain Compromise",
+        "how_matched":"name_exact",
+        "tid":"T1195",
+        "name":"Supply Chain Compromise",
+        "tactics":[
+          "initial-access"
+        ]
+      },
+      {
+        "input":"User Execution",
+        "how_matched":"alias_id",
+        "tid":"T1204",
+        "name":"User Execution",
+        "tactics":[
+          "execution"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+
+    ],
+    "Tactics_covered":[
+      "execution",
+      "initial-access"
+    ],
+    "DataSources_suggested":[
+      "Application Log",
+      "Command",
+      "Container",
+      "File",
+      "Image",
+      "Instance",
+      "Network Traffic",
+      "Process",
+      "Sensor Health"
+    ]
+  },
+  {
+    "ORG_row":24,
+    "ORGID":25,
+    "Industry":"Remote Access Trojan",
+    "Region":"Europe",
+    "Size":"Small",
+    "SecurityBudget":"Low",
+    "PrimarySecurityTeam":"Outsourced",
+    "Maturity":3,
+    "Complexity":2,
+    "ExerciseFrequency":240,
+    "Threats":"Ransomware;DDoS;Web Shell",
+    "TTPs_raw":"Data Destruction;Scheduled Task\/Job;Valid Accounts;Windows Management Instrumentation;Drive-by Compromise;Credential Access;Execution",
+    "Techniques_resolved":[
+      {
+        "input":"Data Destruction",
+        "how_matched":"name_exact",
+        "tid":"T1485",
+        "name":"Data Destruction",
+        "tactics":[
+          "impact"
+        ]
+      },
+      {
+        "input":"Scheduled Task\/Job",
+        "how_matched":"alias_id",
+        "tid":"T1053",
+        "name":"Scheduled Task\/Job",
+        "tactics":[
+          "execution",
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      {
+        "input":"Valid Accounts",
+        "how_matched":"alias_id",
+        "tid":"T1078",
+        "name":"Valid Accounts",
+        "tactics":[
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      },
+      {
+        "input":"Windows Management Instrumentation",
+        "how_matched":"alias_id",
+        "tid":"T1047",
+        "name":"Windows Management Instrumentation",
+        "tactics":[
+          "execution"
+        ]
+      },
+      {
+        "input":"Drive-by Compromise",
+        "how_matched":"name_exact",
+        "tid":"T1189",
+        "name":"Drive-by Compromise",
+        "tactics":[
+          "initial-access"
+        ]
+      },
+      {
+        "input":"Credential Access",
+        "how_matched":"name_contains",
+        "tid":"T1212",
+        "name":"Exploitation for Credential Access",
+        "tactics":[
+          "credential-access"
+        ]
+      },
+      {
+        "input":"Execution",
+        "how_matched":"name_contains",
+        "tid":"T1548.004",
+        "name":"Elevated Execution with Prompt",
+        "tactics":[
+          "privilege-escalation",
+          "defense-evasion"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+
+    ],
+    "Tactics_covered":[
+      "credential-access",
+      "defense-evasion",
+      "execution",
+      "impact",
+      "initial-access",
+      "persistence",
+      "privilege-escalation"
+    ],
+    "DataSources_suggested":[
+      "Application Log",
+      "Cloud Storage",
+      "Command",
+      "Container",
+      "File",
+      "Image",
+      "Instance",
+      "Logon Session",
+      "Network Traffic",
+      "Process",
+      "Scheduled Job",
+      "Snapshot",
+      "User Account",
+      "Volume",
+      "WMI"
+    ]
+  },
+  {
+    "ORG_row":25,
+    "ORGID":26,
+    "Industry":"Web Shell",
+    "Region":"Africa",
+    "Size":"Medium",
+    "SecurityBudget":"Low",
+    "PrimarySecurityTeam":"Hybrid",
+    "Maturity":5,
+    "Complexity":4,
+    "ExerciseFrequency":240,
+    "Threats":"Phishing;Remote Access Trojan;Banking Trojan",
+    "TTPs_raw":"Phishing;Spearphishing Link;Signed Binary Proxy Execution;Boot or Logon Autostart Execution;Scheduled Task\/Job;Discovery;Password Spraying",
+    "Techniques_resolved":[
+      {
+        "input":"Phishing",
+        "how_matched":"name_exact",
+        "tid":"T1566",
+        "name":"Phishing",
+        "tactics":[
+          "initial-access"
+        ]
+      },
+      {
+        "input":"Spearphishing Link",
+        "how_matched":"name_exact",
+        "tid":"T1598.003",
+        "name":"Spearphishing Link",
+        "tactics":[
+          "reconnaissance"
+        ]
+      },
+      {
+        "input":"Signed Binary Proxy Execution",
+        "how_matched":"alias_id",
+        "tid":"T1218",
+        "name":"System Binary Proxy Execution",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Boot or Logon Autostart Execution",
+        "how_matched":"name_exact",
+        "tid":"T1547",
+        "name":"Boot or Logon Autostart Execution",
+        "tactics":[
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      {
+        "input":"Scheduled Task\/Job",
+        "how_matched":"alias_id",
+        "tid":"T1053",
+        "name":"Scheduled Task\/Job",
+        "tactics":[
+          "execution",
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      {
+        "input":"Discovery",
+        "how_matched":"name_contains",
+        "tid":"T1033",
+        "name":"System Owner\/User Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      },
+      {
+        "input":"Password Spraying",
+        "how_matched":"name_exact",
+        "tid":"T1110.003",
+        "name":"Password Spraying",
+        "tactics":[
+          "credential-access"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+
+    ],
+    "Tactics_covered":[
+      "credential-access",
+      "defense-evasion",
+      "discovery",
+      "execution",
+      "initial-access",
+      "persistence",
+      "privilege-escalation",
+      "reconnaissance"
+    ],
+    "DataSources_suggested":[
+      "Active Directory",
+      "Application Log",
+      "Command",
+      "Container",
+      "Driver",
+      "File",
+      "Kernel",
+      "Module",
+      "Network Traffic",
+      "Process",
+      "Scheduled Job",
+      "User Account",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":26,
+    "ORGID":27,
+    "Industry":"Data Breach",
+    "Region":"North America",
+    "Size":"Medium",
+    "SecurityBudget":"Medium",
+    "PrimarySecurityTeam":"In-house",
+    "Maturity":2,
+    "Complexity":1,
+    "ExerciseFrequency":30,
+    "Threats":"Phishing",
+    "TTPs_raw":"Execution;Defense Evasion;Malicious File;Brute Force",
+    "Techniques_resolved":[
+      {
+        "input":"Execution",
+        "how_matched":"name_contains",
+        "tid":"T1548.004",
+        "name":"Elevated Execution with Prompt",
+        "tactics":[
+          "privilege-escalation",
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Defense Evasion",
+        "how_matched":"name_contains",
+        "tid":"T1211",
+        "name":"Exploitation for Defense Evasion",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Brute Force",
+        "how_matched":"alias_id",
+        "tid":"T1110",
+        "name":"Brute Force",
+        "tactics":[
+          "credential-access"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+      "Malicious File"
+    ],
+    "Tactics_covered":[
+      "credential-access",
+      "defense-evasion",
+      "privilege-escalation"
+    ],
+    "DataSources_suggested":[
+      "Application Log",
+      "Command",
+      "Process",
+      "User Account"
+    ]
+  },
+  {
+    "ORG_row":27,
+    "ORGID":28,
+    "Industry":"Banking Trojan",
+    "Region":"Asia",
+    "Size":"Large",
+    "SecurityBudget":"Low",
+    "PrimarySecurityTeam":"Hybrid",
+    "Maturity":5,
+    "Complexity":4,
+    "ExerciseFrequency":90,
+    "Threats":"Supply Chain",
+    "TTPs_raw":"File and Directory Discovery;Password Spraying;Trusted Relationship",
+    "Techniques_resolved":[
+      {
+        "input":"File and Directory Discovery",
+        "how_matched":"name_exact",
+        "tid":"T1083",
+        "name":"File and Directory Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      },
+      {
+        "input":"Password Spraying",
+        "how_matched":"name_exact",
+        "tid":"T1110.003",
+        "name":"Password Spraying",
+        "tactics":[
+          "credential-access"
+        ]
+      },
+      {
+        "input":"Trusted Relationship",
+        "how_matched":"name_exact",
+        "tid":"T1199",
+        "name":"Trusted Relationship",
+        "tactics":[
+          "initial-access"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+
+    ],
+    "Tactics_covered":[
+      "credential-access",
+      "discovery",
+      "initial-access"
+    ],
+    "DataSources_suggested":[
+      "Application Log",
+      "Command",
+      "Logon Session",
+      "Network Traffic",
+      "Process",
+      "User Account"
+    ]
+  },
+  {
+    "ORG_row":28,
+    "ORGID":29,
+    "Industry":"Data Breach",
+    "Region":"Asia",
+    "Size":"Large",
+    "SecurityBudget":"High",
+    "PrimarySecurityTeam":"Hybrid",
+    "Maturity":2,
+    "Complexity":1,
+    "ExerciseFrequency":210,
+    "Threats":"Web Shell;Banking Trojan",
+    "TTPs_raw":"Exfiltration;Signed Binary Proxy Execution;System Information Discovery;Impact;Credential Access;Defense Evasion",
+    "Techniques_resolved":[
+      {
+        "input":"Exfiltration",
+        "how_matched":"name_contains",
+        "tid":"T1567",
+        "name":"Exfiltration Over Web Service",
+        "tactics":[
+          "exfiltration"
+        ]
+      },
+      {
+        "input":"Signed Binary Proxy Execution",
+        "how_matched":"alias_id",
+        "tid":"T1218",
+        "name":"System Binary Proxy Execution",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"System Information Discovery",
+        "how_matched":"name_exact",
+        "tid":"T1082",
+        "name":"System Information Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      },
+      {
+        "input":"Impact",
+        "how_matched":"name_contains",
+        "tid":"T1486",
+        "name":"Data Encrypted for Impact",
+        "tactics":[
+          "impact"
+        ]
+      },
+      {
+        "input":"Credential Access",
+        "how_matched":"name_contains",
+        "tid":"T1212",
+        "name":"Exploitation for Credential Access",
+        "tactics":[
+          "credential-access"
+        ]
+      },
+      {
+        "input":"Defense Evasion",
+        "how_matched":"name_contains",
+        "tid":"T1211",
+        "name":"Exploitation for Defense Evasion",
+        "tactics":[
+          "defense-evasion"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+
+    ],
+    "Tactics_covered":[
+      "credential-access",
+      "defense-evasion",
+      "discovery",
+      "exfiltration",
+      "impact"
+    ],
+    "DataSources_suggested":[
+      "Application Log",
+      "Cloud Storage",
+      "Command",
+      "File",
+      "Module",
+      "Network Share",
+      "Network Traffic",
+      "Process",
+      "User Account",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":29,
+    "ORGID":30,
+    "Industry":"Remote Access Trojan",
+    "Region":"Europe",
+    "Size":"Large",
+    "SecurityBudget":"Medium",
+    "PrimarySecurityTeam":"Hybrid",
+    "Maturity":4,
+    "Complexity":3,
+    "ExerciseFrequency":180,
+    "Threats":"DDoS;Web Shell",
+    "TTPs_raw":"Network Service Scanning;Obfuscated Files or Information;Initial Access;Boot or Logon Autostart Execution;Valid Accounts",
+    "Techniques_resolved":[
+      {
+        "input":"Network Service Scanning",
+        "how_matched":"alias_id",
+        "tid":"T1046",
+        "name":"Network Service Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      },
+      {
+        "input":"Obfuscated Files or Information",
+        "how_matched":"name_exact",
+        "tid":"T1027",
+        "name":"Obfuscated Files or Information",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Boot or Logon Autostart Execution",
+        "how_matched":"name_exact",
+        "tid":"T1547",
+        "name":"Boot or Logon Autostart Execution",
+        "tactics":[
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      {
+        "input":"Valid Accounts",
+        "how_matched":"alias_id",
+        "tid":"T1078",
+        "name":"Valid Accounts",
+        "tactics":[
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+      "Initial Access"
+    ],
+    "Tactics_covered":[
+      "defense-evasion",
+      "discovery",
+      "initial-access",
+      "persistence",
+      "privilege-escalation"
+    ],
+    "DataSources_suggested":[
+      "Application Log",
+      "Cloud Service",
+      "Command",
+      "Driver",
+      "File",
+      "Kernel",
+      "Logon Session",
+      "Module",
+      "Network Traffic",
+      "Process",
+      "Script",
+      "User Account",
+      "WMI",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":30,
+    "ORGID":31,
+    "Industry":"Insider Threat",
+    "Region":"North America",
+    "Size":"Medium",
+    "SecurityBudget":"Medium",
+    "PrimarySecurityTeam":"Outsourced",
+    "Maturity":1,
+    "Complexity":5,
+    "ExerciseFrequency":60,
+    "Threats":"DDoS",
+    "TTPs_raw":"Impact;Defense Evasion",
+    "Techniques_resolved":[
+      {
+        "input":"Impact",
+        "how_matched":"name_contains",
+        "tid":"T1486",
+        "name":"Data Encrypted for Impact",
+        "tactics":[
+          "impact"
+        ]
+      },
+      {
+        "input":"Defense Evasion",
+        "how_matched":"name_contains",
+        "tid":"T1211",
+        "name":"Exploitation for Defense Evasion",
+        "tactics":[
+          "defense-evasion"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+
+    ],
+    "Tactics_covered":[
+      "defense-evasion",
+      "impact"
+    ],
+    "DataSources_suggested":[
+      "Application Log",
+      "Cloud Storage",
+      "Command",
+      "File",
+      "Network Share",
+      "Process"
+    ]
+  },
+  {
+    "ORG_row":31,
+    "ORGID":32,
+    "Industry":"Data Breach",
+    "Region":"Asia",
+    "Size":"Medium",
+    "SecurityBudget":"High",
+    "PrimarySecurityTeam":"In-house",
+    "Maturity":2,
+    "Complexity":4,
+    "ExerciseFrequency":120,
+    "Threats":"Phishing",
+    "TTPs_raw":"Data Staged;Malicious File",
+    "Techniques_resolved":[
+      {
+        "input":"Data Staged",
+        "how_matched":"alias_id",
+        "tid":"T1074",
+        "name":"Data Staged",
+        "tactics":[
+          "collection"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+      "Malicious File"
+    ],
+    "Tactics_covered":[
+      "collection"
+    ],
+    "DataSources_suggested":[
+      "Command",
+      "File",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":32,
+    "ORGID":33,
+    "Industry":"Crypto Miner",
+    "Region":"North America",
+    "Size":"Large",
+    "SecurityBudget":"Low",
+    "PrimarySecurityTeam":"Outsourced",
+    "Maturity":5,
+    "Complexity":2,
+    "ExerciseFrequency":60,
+    "Threats":"Phishing",
+    "TTPs_raw":"Malicious File;Spearphishing Link;Phishing;Obfuscated Files or Information",
+    "Techniques_resolved":[
+      {
+        "input":"Spearphishing Link",
+        "how_matched":"name_exact",
+        "tid":"T1598.003",
+        "name":"Spearphishing Link",
+        "tactics":[
+          "reconnaissance"
+        ]
+      },
+      {
+        "input":"Phishing",
+        "how_matched":"name_exact",
+        "tid":"T1566",
+        "name":"Phishing",
+        "tactics":[
+          "initial-access"
+        ]
+      },
+      {
+        "input":"Obfuscated Files or Information",
+        "how_matched":"name_exact",
+        "tid":"T1027",
+        "name":"Obfuscated Files or Information",
+        "tactics":[
+          "defense-evasion"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+      "Malicious File"
+    ],
+    "Tactics_covered":[
+      "defense-evasion",
+      "initial-access",
+      "reconnaissance"
+    ],
+    "DataSources_suggested":[
+      "Application Log",
+      "Command",
+      "File",
+      "Module",
+      "Network Traffic",
+      "Process",
+      "Script",
+      "WMI",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":33,
+    "ORGID":34,
+    "Industry":"Supply Chain",
+    "Region":"Asia",
+    "Size":"Medium",
+    "SecurityBudget":"Low",
+    "PrimarySecurityTeam":"Hybrid",
+    "Maturity":5,
+    "Complexity":1,
+    "ExerciseFrequency":90,
+    "Threats":"Phishing;Remote Access Trojan;Insider Threat",
+    "TTPs_raw":"Internal Spearphishing;Data Exfiltration Over Web Service;Persistence;Remote File Copy;Access Token Manipulation;Valid Accounts;Brute Force;Discovery",
+    "Techniques_resolved":[
+      {
+        "input":"Internal Spearphishing",
+        "how_matched":"name_exact",
+        "tid":"T1534",
+        "name":"Internal Spearphishing",
+        "tactics":[
+          "lateral-movement"
+        ]
+      },
+      {
+        "input":"Data Exfiltration Over Web Service",
+        "how_matched":"alias_id",
+        "tid":"T1567.002",
+        "name":"Exfiltration to Cloud Storage",
+        "tactics":[
+          "exfiltration"
+        ]
+      },
+      {
+        "input":"Persistence",
+        "how_matched":"name_contains",
+        "tid":"T1070.009",
+        "name":"Clear Persistence",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Access Token Manipulation",
+        "how_matched":"alias_id",
+        "tid":"T1134",
+        "name":"Access Token Manipulation",
+        "tactics":[
+          "defense-evasion",
+          "privilege-escalation"
+        ]
+      },
+      {
+        "input":"Valid Accounts",
+        "how_matched":"alias_id",
+        "tid":"T1078",
+        "name":"Valid Accounts",
+        "tactics":[
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      },
+      {
+        "input":"Brute Force",
+        "how_matched":"alias_id",
+        "tid":"T1110",
+        "name":"Brute Force",
+        "tactics":[
+          "credential-access"
+        ]
+      },
+      {
+        "input":"Discovery",
+        "how_matched":"name_contains",
+        "tid":"T1033",
+        "name":"System Owner\/User Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+      "Remote File Copy"
+    ],
+    "Tactics_covered":[
+      "credential-access",
+      "defense-evasion",
+      "discovery",
+      "exfiltration",
+      "initial-access",
+      "lateral-movement",
+      "persistence",
+      "privilege-escalation"
+    ],
+    "DataSources_suggested":[
+      "Active Directory",
+      "Application Log",
+      "Command",
+      "File",
+      "Logon Session",
+      "Network Traffic",
+      "Process",
+      "Scheduled Job",
+      "User Account",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":34,
+    "ORGID":35,
+    "Industry":"Ransomware",
+    "Region":"Oceania",
+    "Size":"Large",
+    "SecurityBudget":"Medium",
+    "PrimarySecurityTeam":"In-house",
+    "Maturity":1,
+    "Complexity":5,
+    "ExerciseFrequency":270,
+    "Threats":"Banking Trojan;Phishing;Remote Access Trojan",
+    "TTPs_raw":"Discovery;Remote System Discovery;Persistence;Credential Access;Exfiltration;Masquerading;Account Manipulation",
+    "Techniques_resolved":[
+      {
+        "input":"Discovery",
+        "how_matched":"name_contains",
+        "tid":"T1033",
+        "name":"System Owner\/User Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      },
+      {
+        "input":"Remote System Discovery",
+        "how_matched":"name_exact",
+        "tid":"T1018",
+        "name":"Remote System Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      },
+      {
+        "input":"Persistence",
+        "how_matched":"name_contains",
+        "tid":"T1070.009",
+        "name":"Clear Persistence",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Credential Access",
+        "how_matched":"name_contains",
+        "tid":"T1212",
+        "name":"Exploitation for Credential Access",
+        "tactics":[
+          "credential-access"
+        ]
+      },
+      {
+        "input":"Exfiltration",
+        "how_matched":"name_contains",
+        "tid":"T1567",
+        "name":"Exfiltration Over Web Service",
+        "tactics":[
+          "exfiltration"
+        ]
+      },
+      {
+        "input":"Masquerading",
+        "how_matched":"name_exact",
+        "tid":"T1036",
+        "name":"Masquerading",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Account Manipulation",
+        "how_matched":"name_exact",
+        "tid":"T1098",
+        "name":"Account Manipulation",
+        "tactics":[
+          "persistence",
+          "privilege-escalation"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+
+    ],
+    "Tactics_covered":[
+      "credential-access",
+      "defense-evasion",
+      "discovery",
+      "exfiltration",
+      "persistence",
+      "privilege-escalation"
+    ],
+    "DataSources_suggested":[
+      "Active Directory",
+      "Application Log",
+      "Command",
+      "File",
+      "Group",
+      "Image",
+      "Network Traffic",
+      "Process",
+      "Scheduled Job",
+      "Service",
+      "User Account",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":35,
+    "ORGID":36,
+    "Industry":"Crypto Miner",
+    "Region":"Oceania",
+    "Size":"Medium",
+    "SecurityBudget":"High",
+    "PrimarySecurityTeam":"Outsourced",
+    "Maturity":5,
+    "Complexity":2,
+    "ExerciseFrequency":360,
+    "Threats":"Crypto Miner;Ransomware;Supply Chain",
+    "TTPs_raw":"Masquerading;Execution;Rootkit;Remote Services;Valid Accounts;OS Credential Dumping;Lateral Movement;Privilege Escalation;Initial Access",
+    "Techniques_resolved":[
+      {
+        "input":"Masquerading",
+        "how_matched":"name_exact",
+        "tid":"T1036",
+        "name":"Masquerading",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Execution",
+        "how_matched":"name_contains",
+        "tid":"T1548.004",
+        "name":"Elevated Execution with Prompt",
+        "tactics":[
+          "privilege-escalation",
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Rootkit",
+        "how_matched":"name_exact",
+        "tid":"T1014",
+        "name":"Rootkit",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Remote Services",
+        "how_matched":"name_exact",
+        "tid":"T1021",
+        "name":"Remote Services",
+        "tactics":[
+          "lateral-movement"
+        ]
+      },
+      {
+        "input":"Valid Accounts",
+        "how_matched":"alias_id",
+        "tid":"T1078",
+        "name":"Valid Accounts",
+        "tactics":[
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      },
+      {
+        "input":"OS Credential Dumping",
+        "how_matched":"name_exact",
+        "tid":"T1003",
+        "name":"OS Credential Dumping",
+        "tactics":[
+          "credential-access"
+        ]
+      },
+      {
+        "input":"Privilege Escalation",
+        "how_matched":"name_contains",
+        "tid":"T1068",
+        "name":"Exploitation for Privilege Escalation",
+        "tactics":[
+          "privilege-escalation"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+      "Lateral Movement",
+      "Initial Access"
+    ],
+    "Tactics_covered":[
+      "credential-access",
+      "defense-evasion",
+      "initial-access",
+      "lateral-movement",
+      "persistence",
+      "privilege-escalation"
+    ],
+    "DataSources_suggested":[
+      "Active Directory",
+      "Command",
+      "Drive",
+      "Driver",
+      "File",
+      "Firmware",
+      "Image",
+      "Logon Session",
+      "Module",
+      "Network Share",
+      "Network Traffic",
+      "Process",
+      "Scheduled Job",
+      "Service",
+      "User Account",
+      "WMI",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":36,
+    "ORGID":37,
+    "Industry":"Data Breach",
+    "Region":"Europe",
+    "Size":"Medium",
+    "SecurityBudget":"Low",
+    "PrimarySecurityTeam":"Outsourced",
+    "Maturity":3,
+    "Complexity":3,
+    "ExerciseFrequency":150,
+    "Threats":"Insider Threat;Web Shell;Data Breach",
+    "TTPs_raw":"Impact;Discovery;Unsecured Credentials;Initial Access;Credential Access;Signed Binary Proxy Execution",
+    "Techniques_resolved":[
+      {
+        "input":"Impact",
+        "how_matched":"name_contains",
+        "tid":"T1486",
+        "name":"Data Encrypted for Impact",
+        "tactics":[
+          "impact"
+        ]
+      },
+      {
+        "input":"Discovery",
+        "how_matched":"name_contains",
+        "tid":"T1033",
+        "name":"System Owner\/User Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      },
+      {
+        "input":"Unsecured Credentials",
+        "how_matched":"name_exact",
+        "tid":"T1552",
+        "name":"Unsecured Credentials",
+        "tactics":[
+          "credential-access"
+        ]
+      },
+      {
+        "input":"Credential Access",
+        "how_matched":"name_contains",
+        "tid":"T1212",
+        "name":"Exploitation for Credential Access",
+        "tactics":[
+          "credential-access"
+        ]
+      },
+      {
+        "input":"Signed Binary Proxy Execution",
+        "how_matched":"alias_id",
+        "tid":"T1218",
+        "name":"System Binary Proxy Execution",
+        "tactics":[
+          "defense-evasion"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+      "Initial Access"
+    ],
+    "Tactics_covered":[
+      "credential-access",
+      "defense-evasion",
+      "discovery",
+      "impact"
+    ],
+    "DataSources_suggested":[
+      "Active Directory",
+      "Application Log",
+      "Cloud Storage",
+      "Command",
+      "File",
+      "Module",
+      "Network Share",
+      "Network Traffic",
+      "Process",
+      "User Account",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":37,
+    "ORGID":38,
+    "Industry":"Insider Threat",
+    "Region":"Oceania",
+    "Size":"Large",
+    "SecurityBudget":"High",
+    "PrimarySecurityTeam":"Hybrid",
+    "Maturity":3,
+    "Complexity":1,
+    "ExerciseFrequency":180,
+    "Threats":"Web Shell;Supply Chain;DDoS",
+    "TTPs_raw":"Data Exfiltration Over Web Service;Masquerading;Network Service Scanning;Scheduled Task\/Job;Persistence;Windows Management Instrumentation;Service Stop;Execution",
+    "Techniques_resolved":[
+      {
+        "input":"Data Exfiltration Over Web Service",
+        "how_matched":"alias_id",
+        "tid":"T1567.002",
+        "name":"Exfiltration to Cloud Storage",
+        "tactics":[
+          "exfiltration"
+        ]
+      },
+      {
+        "input":"Masquerading",
+        "how_matched":"name_exact",
+        "tid":"T1036",
+        "name":"Masquerading",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Network Service Scanning",
+        "how_matched":"alias_id",
+        "tid":"T1046",
+        "name":"Network Service Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      },
+      {
+        "input":"Scheduled Task\/Job",
+        "how_matched":"alias_id",
+        "tid":"T1053",
+        "name":"Scheduled Task\/Job",
+        "tactics":[
+          "execution",
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      {
+        "input":"Persistence",
+        "how_matched":"name_contains",
+        "tid":"T1070.009",
+        "name":"Clear Persistence",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Windows Management Instrumentation",
+        "how_matched":"alias_id",
+        "tid":"T1047",
+        "name":"Windows Management Instrumentation",
+        "tactics":[
+          "execution"
+        ]
+      },
+      {
+        "input":"Service Stop",
+        "how_matched":"alias_id",
+        "tid":"T1489",
+        "name":"Service Stop",
+        "tactics":[
+          "impact"
+        ]
+      },
+      {
+        "input":"Execution",
+        "how_matched":"name_contains",
+        "tid":"T1548.004",
+        "name":"Elevated Execution with Prompt",
+        "tactics":[
+          "privilege-escalation",
+          "defense-evasion"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+
+    ],
+    "Tactics_covered":[
+      "defense-evasion",
+      "discovery",
+      "execution",
+      "exfiltration",
+      "impact",
+      "persistence",
+      "privilege-escalation"
+    ],
+    "DataSources_suggested":[
+      "Cloud Service",
+      "Command",
+      "Container",
+      "File",
+      "Image",
+      "Network Traffic",
+      "Process",
+      "Scheduled Job",
+      "Service",
+      "User Account",
+      "WMI",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":38,
+    "ORGID":39,
+    "Industry":"Web Shell",
+    "Region":"Oceania",
+    "Size":"Small",
+    "SecurityBudget":"Medium",
+    "PrimarySecurityTeam":"In-house",
+    "Maturity":3,
+    "Complexity":1,
+    "ExerciseFrequency":300,
+    "Threats":"Web Shell;Crypto Miner;Banking Trojan",
+    "TTPs_raw":"Data Staged;Rootkit;Lateral Movement;Obfuscated Files or Information;Process Injection;Discovery;Valid Accounts;Exfiltration",
+    "Techniques_resolved":[
+      {
+        "input":"Data Staged",
+        "how_matched":"alias_id",
+        "tid":"T1074",
+        "name":"Data Staged",
+        "tactics":[
+          "collection"
+        ]
+      },
+      {
+        "input":"Rootkit",
+        "how_matched":"name_exact",
+        "tid":"T1014",
+        "name":"Rootkit",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Obfuscated Files or Information",
+        "how_matched":"name_exact",
+        "tid":"T1027",
+        "name":"Obfuscated Files or Information",
+        "tactics":[
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Process Injection",
+        "how_matched":"name_exact",
+        "tid":"T1055",
+        "name":"Process Injection",
+        "tactics":[
+          "defense-evasion",
+          "privilege-escalation"
+        ]
+      },
+      {
+        "input":"Discovery",
+        "how_matched":"name_contains",
+        "tid":"T1033",
+        "name":"System Owner\/User Discovery",
+        "tactics":[
+          "discovery"
+        ]
+      },
+      {
+        "input":"Valid Accounts",
+        "how_matched":"alias_id",
+        "tid":"T1078",
+        "name":"Valid Accounts",
+        "tactics":[
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      },
+      {
+        "input":"Exfiltration",
+        "how_matched":"name_contains",
+        "tid":"T1567",
+        "name":"Exfiltration Over Web Service",
+        "tactics":[
+          "exfiltration"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+      "Lateral Movement"
+    ],
+    "Tactics_covered":[
+      "collection",
+      "defense-evasion",
+      "discovery",
+      "exfiltration",
+      "initial-access",
+      "persistence",
+      "privilege-escalation"
+    ],
+    "DataSources_suggested":[
+      "Active Directory",
+      "Application Log",
+      "Command",
+      "Drive",
+      "File",
+      "Firmware",
+      "Logon Session",
+      "Module",
+      "Network Traffic",
+      "Process",
+      "Script",
+      "User Account",
+      "WMI",
+      "Windows Registry"
+    ]
+  },
+  {
+    "ORG_row":39,
+    "ORGID":40,
+    "Industry":"Insider Threat",
+    "Region":"Europe",
+    "Size":"Small",
+    "SecurityBudget":"High",
+    "PrimarySecurityTeam":"Outsourced",
+    "Maturity":1,
+    "Complexity":3,
+    "ExerciseFrequency":270,
+    "Threats":"Web Shell;Remote Access Trojan;Crypto Miner",
+    "TTPs_raw":"Command and Scripting Interpreter;Boot or Logon Autostart Execution;Valid Accounts;Unsecured Credentials;Process Injection;Scheduled Task\/Job;Initial Access;Execution;Windows Management Instrumentation",
+    "Techniques_resolved":[
+      {
+        "input":"Command and Scripting Interpreter",
+        "how_matched":"alias_id",
+        "tid":"T1059",
+        "name":"Command and Scripting Interpreter",
+        "tactics":[
+          "execution"
+        ]
+      },
+      {
+        "input":"Boot or Logon Autostart Execution",
+        "how_matched":"name_exact",
+        "tid":"T1547",
+        "name":"Boot or Logon Autostart Execution",
+        "tactics":[
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      {
+        "input":"Valid Accounts",
+        "how_matched":"alias_id",
+        "tid":"T1078",
+        "name":"Valid Accounts",
+        "tactics":[
+          "defense-evasion",
+          "persistence",
+          "privilege-escalation",
+          "initial-access"
+        ]
+      },
+      {
+        "input":"Unsecured Credentials",
+        "how_matched":"name_exact",
+        "tid":"T1552",
+        "name":"Unsecured Credentials",
+        "tactics":[
+          "credential-access"
+        ]
+      },
+      {
+        "input":"Process Injection",
+        "how_matched":"name_exact",
+        "tid":"T1055",
+        "name":"Process Injection",
+        "tactics":[
+          "defense-evasion",
+          "privilege-escalation"
+        ]
+      },
+      {
+        "input":"Scheduled Task\/Job",
+        "how_matched":"alias_id",
+        "tid":"T1053",
+        "name":"Scheduled Task\/Job",
+        "tactics":[
+          "execution",
+          "persistence",
+          "privilege-escalation"
+        ]
+      },
+      {
+        "input":"Execution",
+        "how_matched":"name_contains",
+        "tid":"T1548.004",
+        "name":"Elevated Execution with Prompt",
+        "tactics":[
+          "privilege-escalation",
+          "defense-evasion"
+        ]
+      },
+      {
+        "input":"Windows Management Instrumentation",
+        "how_matched":"alias_id",
+        "tid":"T1047",
+        "name":"Windows Management Instrumentation",
+        "tactics":[
+          "execution"
+        ]
+      }
+    ],
+    "Unmatched_TTP_tokens":[
+      "Initial Access"
+    ],
+    "Tactics_covered":[
+      "credential-access",
+      "defense-evasion",
+      "execution",
+      "initial-access",
+      "persistence",
+      "privilege-escalation"
+    ],
+    "DataSources_suggested":[
+      "Application Log",
+      "Command",
+      "Container",
+      "Driver",
+      "File",
+      "Kernel",
+      "Logon Session",
+      "Module",
+      "Network Traffic",
+      "Process",
+      "Scheduled Job",
+      "Script",
+      "User Account",
+      "WMI",
+      "Windows Registry"
+    ]
+  }
+]
