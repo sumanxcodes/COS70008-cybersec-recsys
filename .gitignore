@@ -207,9 +207,6 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-# Datafiles due to its size
-data/
-
 
 # OS junk
 .DS_Store
