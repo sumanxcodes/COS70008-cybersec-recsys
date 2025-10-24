@@ -1,0 +1,12 @@
+{
+  "seed": 42,
+  "counts": {
+    "rows_total": 14106,
+    "rows_train": 11248,
+    "rows_val": 2858,
+    "groups_total": 158,
+    "groups_val": 31,
+    "software_total": 718,
+    "software_val": 143
+  }
+}
