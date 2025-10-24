@@ -1,23 +1,22 @@
-# src/dashboard/app.py
 import streamlit as st
 
-st.set_page_config(page_title="Cybersecurity Exercise Recommender", layout="wide")
+st.set_page_config(
+    page_title="Cyber Exercise Recommender",
+    page_icon=":material/security:",
+    layout="wide"
+)
 
-st.title("🔐 Cybersecurity Exercise Recommendation System")
-st.write("Welcome to our COS70008 group project dashboard! 🎓")
+# Pages via the new navigation API (Streamlit >= 1.37)
+project_brief = st.Page("pages/project_brief.py", title="Project Brief", icon=":material/article:")
+dataset       = st.Page("pages/dataset.py",      title="Dataset",       icon=":material/database:")
+eda          = st.Page("pages/eda.py",      title="EDA",       icon=":material/analytics:")
+phase_one     = st.Page("pages/phase_one.py",    title="Phase 1",       icon=":material/route:")
+phase_two     = st.Page("pages/phase_two.py",    title="Phase 2",       icon=":material/bolt:")
+phase_three   = st.Page("pages/phase_three.py",  title="Phase 3",       icon=":material/network_intel_node:")
 
-st.header("Phase 1: Baseline Recommender")
-st.write("This section will show item-based recommendations based on exercise metadata.")
+nav = st.navigation({
+    "Overview": [project_brief],
+    "Work": [dataset, eda, phase_one, phase_two, phase_three],
+})
 
-st.header("Phase 2: Hybrid Model")
-st.write("This section will combine collaborative filtering with content-based recommendations.")
-
-st.header("Phase 3: Analytics & Visualisation")
-st.write("Here, you'll see performance trends, APT mappings, and feedback insights.")
-
-# Temporary placeholder example
-if st.button("Run Sample Recommendation"):
-    st.success("Sample recommendation generated!")
-
-st.sidebar.header("Navigation")
-st.sidebar.write("Use this panel to filter or select different datasets/models.")
+nav.run()
