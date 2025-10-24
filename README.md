@@ -1,85 +1,143 @@
 # COS70008 Cybersecurity Exercise Recommendation System
 
-Hey there! This is our group project for COS70008. We’re building a 3-phase recommender system to help suggest the most relevant cybersecurity drills for organisations, based on MITRE ATT&CK tags, past exercise performance, and some cool hybrid ML techniques.
+Hey there! 👋
+This repository contains our group project for **COS70008 – Technology Innovation Research & Project (2025-HS2)**.
+We’re developing a **3-phase Cybersecurity Exercise Recommendation System**, designed to suggest relevant cybersecurity drills for organisations based on **MITRE ATT&CK** data, historical performance, and Deep-learning models.
 
-## Project Structure
+---
+
+## Project Overview
+
+Cyber exercises are vital for improving an organisation’s cyber resilience — but choosing the *right next exercise* can be tricky.
+Our system bridges that gap using a mix of **content-based**, **collaborative**, and **deep learning** techniques:
+
+- **Phase 1:** Baseline recommender using exercise-to-exercise similarity (TF-IDF / cosine).
+- **Phase 2:** Collaborative filtering (FunkSVD) to learn org–exercise relationships.
+- **Phase 3:** Deep-learning Softmax model for MITRE ATT&CK TTP prediction.
+All three are wrapped inside an interactive **Streamlit dashboard**.
+
+---
+
+## 📂 Project Structure
 
 ```
 COS70008-cybersec-recsys/
-├─ README.md               → You’re reading this!
-├─ environment.yml         → Conda env setup with all dependencies
-├─ .gitignore               → Files & folders Git won’t track
-├─ LICENSE                 → License for the project
-├─ CONTRIBUTING.md         → Guidelines for contributing
-├─ data/
-│  ├─ raw/                  → Original datasets (not tracked in Git)
-│  ├─ processed/            → Cleaned & ready-to-use data (also not tracked)
-│  └─ .gitkeep               → Keeps empty folders in Git
-├─ notebooks/               → Jupyter notebooks for EDA & prototypes
-├─ src/                     → All Python source code
-│  ├─ data/                 → Data loading & preprocessing
-│  ├─ features/             → Feature engineering (e.g., DTM)
-│  ├─ models/               → ML models (item-based, hybrid)
-│  ├─ eval/                  → Evaluation metrics & scripts
-│  └─ dashboard/            → Web dashboard code
-├─ tests/                   → Unit/integration tests
-├─ scripts/                 → Standalone scripts for data prep, training, etc.
-├─ outputs/                 → Generated models, logs, charts (ignored in Git)
-└─ .gitkeep                  → Placeholder for empty dirs
+├─ README.md                    → You’re reading this file!
+├─ environment.yml              → Conda environment for all dependencies
+├─ .gitignore                   → Files & folders excluded from Git
+├─ LICENSE
+├─ CONTRIBUTING.md
+│
+├─ data/                        → All data files
+│  ├─ raw/                     → Original datasets (not tracked in Git)
+│  ├─ processed/               → Cleaned & merged data (local only)
+│  └─ .gitkeep
+│
+├─ notebooks/                   → Jupyter notebooks for EDA and prototypes
+│
+├─ src/                         → Main source code
+│  ├─ data/                    → Data loading, parsing, cleaning utilities
+│       ├─ ex_sim.npz                   → Exercise-to-exercise similarity matrix (Phase 1)
+│       ├─ org_ttp_map.csv              → Mapping of organisations ↔ MITRE TTPs
+│       ├─ exercises_full.csv           → Exercise metadata (TTPs, Threats, etc.)
+│       ├─ orgs_full.csv                → Organisation profiles and observed TTPs
+│       ├─ ratings_train_full.csv       → Training ratings matrix (CF)
+│       ├─ ratings_validation_full.csv  → Validation ratings matrix
+│       ├─ ratings_test_full.csv        → Test ratings matrix
+│       └─ enterprise-attack/           → MITRE ATT&CK STIX knowledge base (JSON)
+│  └─ dashboard/                → Streamlit dashboard (Phase 1–3 pages)
+│       ├─ app.py               → Main Streamlit entry point
+│       ├─ funk_svd.py          → Custom FunkSVD recommender implementation
+│       └─ pages/               → Streamlit pages for each project phase
+│           ├─ project_brief.py
+│           ├─ dataset.py
+│           ├─ eda.py
+│           ├─ phase_one.py
+│           ├─ phase_two.py
+│           └─ phase_three.py
+│
+├─ artifacts/                → Saved model weights, vocab files, and logs
+├─ models/                   → Exported TensorFlow and CF models
+└─ .gitkeep
 ```
 
-**Why ignore **``** & **``**?** To avoid huge repos, keep sensitive data private, and ensure everyone generates outputs locally.
+## Environment Setup
 
-## How to Run It (for teammates)
-
-1. **Clone the repo**
+We use **TensorFlow** as our main deep-learning framework.
+Create the environment via Conda:
 
 ```bash
 git clone https://github.com/sumanxcodes/COS70008-cybersec-recsys.git
 cd COS70008-cybersec-recsys
-```
-
-2. **Set up the environment**
-
-```bash
 conda env create -f environment.yml
 conda activate cybersec-recsys
 ```
 
-3. **Run Jupyter Notebooks** (for EDA/prototyping)
+---
 
+## 🚀 Running the Project
+
+### 1. Launch Jupyter (for data exploration)
 ```bash
 python -m ipykernel install --user --name cybersec-recsys --display-name "Python (cybersec-recsys)"
 jupyter lab
 ```
+All the notebooks are in the folder COS70008-cybersec-recsys/notebooks
 
-Select the `Python (cybersec-recsys)` kernel.
-
-4. **Run scripts** Example: build a DTM from metadata
-
-```bash
-python scripts/build_dtm.py --input data/raw/exercises.csv --out data/processed/dtm.npz
-```
-
-5. **Launch the dashboard**
-
+### 2. Start the Streamlit dashboard
 ```bash
 streamlit run src/dashboard/app.py
 ```
+You’ll see tabs for each phase along with EDA and Dataset:
 
-6. **Testing**
-
-```bash
-pytest -q
-```
+- **Phase 1 – Baseline (DTM + Cosine)**
+- **Phase 2 – Collaborative Filtering (FunkSVD)**
+- **Phase 3 – Deep Learning (Softmax TTP Prediction)**
 
 ---
 
-### Quick Project Goal Recap
+## 🧩 Phase Summary
 
-- **Phase 1:** Item-based recommender using DTM + similarity scores.
-- **Phase 2:** Hybrid recommender (collab filtering + content-based).
-- **Phase 3:** Interactive dashboard with APT mapping, history trends, and rec explanations.
+### 🏁 Phase 1 – Baseline Recommender
+- Built **Document-Term Matrix (DTM)** using exercise metadata (MITRE tags, difficulty, scope).
+- Used **TF-IDF** and **cosine similarity** to rank top-N similar exercises.
+- Visualised results in an interactive Altair scatter plot.
 
-Let’s keep things clean, commit often, and document as we go 🚀
+### 🤝 Phase 2 – Collaborative Filtering (FunkSVD)
+- Constructed **Org × Exercise** matrix from rating datasets (`ratings_train_full.csv`, etc.).
+- Implemented **matrix factorisation (FunkSVD)** via SGD with bias terms and early stopping.
+- Predicted new exercise ratings and recommendations per organisation.
+- Integrated evaluation metrics (RMSE, Top-N recall).
 
+### 🧠 Phase 3 – Deep Learning Softmax Model
+- Mapped **MITRE ATT&CK TTPs** to organisational attack data.
+- Built a **single-tower softmax neural network** using TensorFlow.
+- Trained on MITRE-only dataset;
+- Used for **TTP prediction** and **gap analysis** (suggesting unseen but likely techniques).
+- Fully integrated into the Streamlit dashboard for visual insight.
+
+---
+## 📊 Datasets Used
+
+| Dataset | Description |
+|----------|--------------|
+| `exercises_full.csv` | Exercise metadata (name, difficulty, MITRE tags, etc.) |
+| `orgs_full.csv` | Organisation profiles with observed TTPs |
+| `ratings_train_full.csv` / `ratings_validation_full.csv` / `ratings_test_full.csv` | Org × Exercise rating matrices for CF |
+| `enterprise-attack.json` | MITRE ATT&CK STIX knowledge base |
+| `org_ttp_map.csv` | Mapping between organisations and TTP techniques |
+
+---
+
+## 🧩 Tech Stack
+
+**Core Libraries:**
+- TensorFlow / Keras (Deep learning)
+- NumPy, Pandas, PyArrow (data handling)
+- Scikit-learn (TF-IDF, evaluation metrics)
+- Streamlit + Altair (interactive dashboard & visualisation)
+
+**Framework:**
+- Python 3.11 (via Conda `cybersec-recsys` environment)
+
+---
