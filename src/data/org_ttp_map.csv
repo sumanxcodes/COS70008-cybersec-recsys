@@ -1,0 +1,246 @@
+ORGID,original_text,label_type,attack_id,match_type
+1,Signed Binary Proxy Execution,technique,T1218,alias
+1,Network Service Scanning,technique,T1046,alias
+2,Command and Scripting Interpreter,technique,T1059,exact_name
+2,Service Stop,technique,T1489,exact_name
+2,Discovery,tactic,TA0007,exact_name
+2,Defense Evasion,tactic,TA0005,exact_name
+2,Exfiltration,tactic,TA0010,exact_name
+3,Data Exfiltration Over Web Service,technique,T1567,alias
+3,Network Service Scanning,technique,T1046,alias
+3,User Execution,technique,T1204,exact_name
+3,Malicious File,technique,T1204.002,exact_name
+3,Brute Force,technique,T1110,exact_name
+3,Access Token Manipulation,technique,T1134,exact_name
+3,Data Staged,technique,T1074,exact_name
+3,Bypass User Account Control,technique,T1548.002,exact_name
+3,Scheduled Task/Job,technique,T1053,exact_name
+3,Windows Management Instrumentation,technique,T1047,exact_name
+4,Spearphishing Attachment,technique,T1598.002,exact_name
+4,Signed Binary Proxy Execution,technique,T1218,alias
+4,Phishing,technique,T1566,exact_name
+4,Execution,tactic,TA0002,exact_name
+4,Command and Control,tactic,TA0011,exact_name
+5,Data Staged,technique,T1074,exact_name
+5,Unsecured Credentials,technique,T1552,exact_name
+5,User Execution,technique,T1204,exact_name
+5,Masquerading,technique,T1036,exact_name
+6,Account Discovery,technique,T1087,exact_name
+6,Initial Access,tactic,TA0001,exact_name
+6,Boot or Logon Autostart Execution,technique,T1547,exact_name
+6,Remote Services,technique,T1021,exact_name
+6,Phishing,technique,T1566,exact_name
+6,Process Injection,technique,T1055,exact_name
+7,Execution,tactic,TA0002,exact_name
+7,Drive-by Compromise,technique,T1189,exact_name
+7,Signed Binary Proxy Execution,technique,T1218,alias
+7,Valid Accounts,technique,T1078,exact_name
+7,Privilege Escalation,tactic,TA0004,exact_name
+7,Discovery,tactic,TA0007,exact_name
+7,Impact,tactic,TA0040,exact_name
+7,Exfiltration,tactic,TA0010,exact_name
+7,Remote File Copy,technique,T1105,alias
+7,Account Manipulation,technique,T1098,exact_name
+8,Defense Evasion,tactic,TA0005,exact_name
+8,Scripting,technique,T1059,alias
+8,Data Staged,technique,T1074,exact_name
+8,Account Manipulation,technique,T1098,exact_name
+9,Command and Scripting Interpreter,technique,T1059,exact_name
+9,Data Staged,technique,T1074,exact_name
+9,File and Directory Discovery,technique,T1083,exact_name
+9,Exfiltration,tactic,TA0010,exact_name
+9,Remote File Copy,technique,T1105,alias
+9,Scheduled Task/Job,technique,T1053,exact_name
+10,Credential Access,tactic,TA0006,exact_name
+10,Remote System Discovery,technique,T1018,exact_name
+10,Process Injection,technique,T1055,exact_name
+11,Defense Evasion,tactic,TA0005,exact_name
+11,Valid Accounts,technique,T1078,exact_name
+11,Service Stop,technique,T1489,exact_name
+11,Malicious File,technique,T1204.002,exact_name
+11,Drive-by Compromise,technique,T1189,exact_name
+11,Rootkit,technique,T1014,exact_name
+12,Data Staged,technique,T1074,exact_name
+12,Malicious File,technique,T1204.002,exact_name
+12,Initial Access,tactic,TA0001,exact_name
+12,Application Window Discovery,technique,T1010,exact_name
+12,Unsecured Credentials,technique,T1552,exact_name
+12,Exfiltration,tactic,TA0010,exact_name
+12,Boot or Logon Autostart Execution,technique,T1547,exact_name
+12,Obfuscated Files or Information,technique,T1027,exact_name
+12,Execution,tactic,TA0002,exact_name
+13,Trusted Relationship,technique,T1199,exact_name
+13,Boot or Logon Autostart Execution,technique,T1547,exact_name
+13,Brute Force,technique,T1110,exact_name
+13,Initial Access,tactic,TA0001,exact_name
+14,Network Service Scanning,technique,T1046,alias
+14,Drive-by Compromise,technique,T1189,exact_name
+14,Access Token Manipulation,technique,T1134,exact_name
+14,Initial Access,tactic,TA0001,exact_name
+14,Remote System Discovery,technique,T1018,exact_name
+14,Valid Accounts,technique,T1078,exact_name
+14,Obfuscated Files or Information,technique,T1027,exact_name
+15,Account Manipulation,technique,T1098,exact_name
+15,Exfiltration,tactic,TA0010,exact_name
+15,Rootkit,technique,T1014,exact_name
+15,Application Layer Protocol,technique,T1071,exact_name
+15,Privilege Escalation,tactic,TA0004,exact_name
+15,Credential Access,tactic,TA0006,exact_name
+16,Process Injection,technique,T1055,exact_name
+16,Data Staged,technique,T1074,exact_name
+16,Account Manipulation,technique,T1098,exact_name
+16,Discovery,tactic,TA0007,exact_name
+16,Command and Scripting Interpreter,technique,T1059,exact_name
+16,System Information Discovery,technique,T1082,exact_name
+16,Valid Accounts,technique,T1078,exact_name
+16,Boot or Logon Autostart Execution,technique,T1547,exact_name
+16,Remote System Discovery,technique,T1018,exact_name
+17,Persistence,tactic,TA0003,exact_name
+17,Defense Evasion,tactic,TA0005,exact_name
+17,Password Spraying,technique,T1110.003,exact_name
+17,System Information Discovery,technique,T1082,exact_name
+17,Windows Management Instrumentation,technique,T1047,exact_name
+17,Impact,tactic,TA0040,exact_name
+17,Discovery,tactic,TA0007,exact_name
+17,Privilege Escalation,tactic,TA0004,exact_name
+17,Rootkit,technique,T1014,exact_name
+18,Execution,tactic,TA0002,exact_name
+18,Valid Accounts,technique,T1078,exact_name
+18,Lateral Movement,tactic,TA0008,exact_name
+18,Unsecured Credentials,technique,T1552,exact_name
+18,Defense Evasion,tactic,TA0005,exact_name
+19,Drive-by Compromise,technique,T1189,exact_name
+19,Signed Binary Proxy Execution,technique,T1218,alias
+19,Process Injection,technique,T1055,exact_name
+20,File and Directory Discovery,technique,T1083,exact_name
+20,Trusted Relationship,technique,T1199,exact_name
+20,Process Injection,technique,T1055,exact_name
+20,Command and Control,tactic,TA0011,exact_name
+20,Application Layer Protocol,technique,T1071,exact_name
+20,Service Stop,technique,T1489,exact_name
+20,Custom Command and Control Protocol,technique,T1095,legacy_redirect
+20,Data Encrypted for Impact,technique,T1486,exact_name
+20,Password Spraying,technique,T1110.003,exact_name
+20,Credential Access,tactic,TA0006,exact_name
+20,Lateral Movement,tactic,TA0008,exact_name
+21,Command and Control,tactic,TA0011,exact_name
+21,Obfuscated Files or Information,technique,T1027,exact_name
+21,Pass the Hash,technique,T1550.002,exact_name
+21,Malicious File,technique,T1204.002,exact_name
+21,Network Service Scanning,technique,T1046,alias
+21,Persistence,tactic,TA0003,exact_name
+21,Phishing,technique,T1566,exact_name
+21,Data Exfiltration Over Web Service,technique,T1567,alias
+21,Remote Services,technique,T1021,exact_name
+21,Discovery,tactic,TA0007,exact_name
+21,Command and Scripting Interpreter,technique,T1059,exact_name
+22,Remote Services,technique,T1021,exact_name
+22,Signed Binary Proxy Execution,technique,T1218,alias
+22,Custom Command and Control Protocol,technique,T1095,legacy_redirect
+22,Lateral Movement,tactic,TA0008,exact_name
+22,Rootkit,technique,T1014,exact_name
+22,Data Staged,technique,T1074,exact_name
+22,Drive-by Compromise,technique,T1189,exact_name
+23,Data Exfiltration Over Web Service,technique,T1567,alias
+23,Account Manipulation,technique,T1098,exact_name
+23,Unsecured Credentials,technique,T1552,exact_name
+23,Privilege Escalation,tactic,TA0004,exact_name
+23,Execution,tactic,TA0002,exact_name
+24,Phishing,technique,T1566,exact_name
+24,Supply Chain Compromise,technique,T1195,exact_name
+24,User Execution,technique,T1204,exact_name
+25,Data Destruction,technique,T1485,exact_name
+25,Scheduled Task/Job,technique,T1053,exact_name
+25,Valid Accounts,technique,T1078,exact_name
+25,Windows Management Instrumentation,technique,T1047,exact_name
+25,Drive-by Compromise,technique,T1189,exact_name
+25,Credential Access,tactic,TA0006,exact_name
+25,Execution,tactic,TA0002,exact_name
+26,Phishing,technique,T1566,exact_name
+26,Spearphishing Link,technique,T1598.003,exact_name
+26,Signed Binary Proxy Execution,technique,T1218,alias
+26,Boot or Logon Autostart Execution,technique,T1547,exact_name
+26,Scheduled Task/Job,technique,T1053,exact_name
+26,Discovery,tactic,TA0007,exact_name
+26,Password Spraying,technique,T1110.003,exact_name
+27,Execution,tactic,TA0002,exact_name
+27,Defense Evasion,tactic,TA0005,exact_name
+27,Malicious File,technique,T1204.002,exact_name
+27,Brute Force,technique,T1110,exact_name
+28,File and Directory Discovery,technique,T1083,exact_name
+28,Password Spraying,technique,T1110.003,exact_name
+28,Trusted Relationship,technique,T1199,exact_name
+29,Exfiltration,tactic,TA0010,exact_name
+29,Signed Binary Proxy Execution,technique,T1218,alias
+29,System Information Discovery,technique,T1082,exact_name
+29,Impact,tactic,TA0040,exact_name
+29,Credential Access,tactic,TA0006,exact_name
+29,Defense Evasion,tactic,TA0005,exact_name
+30,Network Service Scanning,technique,T1046,alias
+30,Obfuscated Files or Information,technique,T1027,exact_name
+30,Initial Access,tactic,TA0001,exact_name
+30,Boot or Logon Autostart Execution,technique,T1547,exact_name
+30,Valid Accounts,technique,T1078,exact_name
+31,Impact,tactic,TA0040,exact_name
+31,Defense Evasion,tactic,TA0005,exact_name
+32,Data Staged,technique,T1074,exact_name
+32,Malicious File,technique,T1204.002,exact_name
+33,Malicious File,technique,T1204.002,exact_name
+33,Spearphishing Link,technique,T1598.003,exact_name
+33,Phishing,technique,T1566,exact_name
+33,Obfuscated Files or Information,technique,T1027,exact_name
+34,Internal Spearphishing,technique,T1534,exact_name
+34,Data Exfiltration Over Web Service,technique,T1567,alias
+34,Persistence,tactic,TA0003,exact_name
+34,Remote File Copy,technique,T1105,alias
+34,Access Token Manipulation,technique,T1134,exact_name
+34,Valid Accounts,technique,T1078,exact_name
+34,Brute Force,technique,T1110,exact_name
+34,Discovery,tactic,TA0007,exact_name
+35,Discovery,tactic,TA0007,exact_name
+35,Remote System Discovery,technique,T1018,exact_name
+35,Persistence,tactic,TA0003,exact_name
+35,Credential Access,tactic,TA0006,exact_name
+35,Exfiltration,tactic,TA0010,exact_name
+35,Masquerading,technique,T1036,exact_name
+35,Account Manipulation,technique,T1098,exact_name
+36,Masquerading,technique,T1036,exact_name
+36,Execution,tactic,TA0002,exact_name
+36,Rootkit,technique,T1014,exact_name
+36,Remote Services,technique,T1021,exact_name
+36,Valid Accounts,technique,T1078,exact_name
+36,OS Credential Dumping,technique,T1003,exact_name
+36,Lateral Movement,tactic,TA0008,exact_name
+36,Privilege Escalation,tactic,TA0004,exact_name
+36,Initial Access,tactic,TA0001,exact_name
+37,Impact,tactic,TA0040,exact_name
+37,Discovery,tactic,TA0007,exact_name
+37,Unsecured Credentials,technique,T1552,exact_name
+37,Initial Access,tactic,TA0001,exact_name
+37,Credential Access,tactic,TA0006,exact_name
+37,Signed Binary Proxy Execution,technique,T1218,alias
+38,Data Exfiltration Over Web Service,technique,T1567,alias
+38,Masquerading,technique,T1036,exact_name
+38,Network Service Scanning,technique,T1046,alias
+38,Scheduled Task/Job,technique,T1053,exact_name
+38,Persistence,tactic,TA0003,exact_name
+38,Windows Management Instrumentation,technique,T1047,exact_name
+38,Service Stop,technique,T1489,exact_name
+38,Execution,tactic,TA0002,exact_name
+39,Data Staged,technique,T1074,exact_name
+39,Rootkit,technique,T1014,exact_name
+39,Lateral Movement,tactic,TA0008,exact_name
+39,Obfuscated Files or Information,technique,T1027,exact_name
+39,Process Injection,technique,T1055,exact_name
+39,Discovery,tactic,TA0007,exact_name
+39,Valid Accounts,technique,T1078,exact_name
+39,Exfiltration,tactic,TA0010,exact_name
+40,Command and Scripting Interpreter,technique,T1059,exact_name
+40,Boot or Logon Autostart Execution,technique,T1547,exact_name
+40,Valid Accounts,technique,T1078,exact_name
+40,Unsecured Credentials,technique,T1552,exact_name
+40,Process Injection,technique,T1055,exact_name
+40,Scheduled Task/Job,technique,T1053,exact_name
+40,Initial Access,tactic,TA0001,exact_name
+40,Execution,tactic,TA0002,exact_name
+40,Windows Management Instrumentation,technique,T1047,exact_name
