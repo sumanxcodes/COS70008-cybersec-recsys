@@ -78,6 +78,12 @@ conda activate cybersec-recsys
 ## 🚀 Running the Project
 
 ### 1. Launch Jupyter (for data exploration)
+
+Before running Jupyter Lab, let's copy the MITRE STIX JSON files from the dashboard section into the notebook section. 
+```bash
+cp src/data/enterprise-attack/* notebooks/attack-stix-data/enterprise-attack/
+```
+
 ```bash
 python -m ipykernel install --user --name cybersec-recsys --display-name "Python (cybersec-recsys)"
 jupyter lab
