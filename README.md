@@ -81,6 +81,7 @@ conda activate cybersec-recsys
 
 Before running Jupyter Lab, let's copy the MITRE STIX JSON files from the dashboard section into the notebook section. 
 ```bash
+mkdir -p notebooks/attack-stix-data/enterprise-attack/
 cp src/data/enterprise-attack/* notebooks/attack-stix-data/enterprise-attack/
 ```
 
