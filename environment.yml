@@ -21,5 +21,5 @@ dependencies:
       - networkx>=3.3
       - rich>=13
       - pytest>=8
-      - stix2=3.0.1
-      - altair=5.5.0
+      - stix2==3.0.1
+      - altair==5.5.0
